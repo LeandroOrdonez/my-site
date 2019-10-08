@@ -68,3 +68,42 @@ googleAnalytics = "UA-149589206-1"
     name = "About"
     weight = 2
     url = "/about/"
+
+# Language settings
+[languages]
+    [languages.en]
+        languagename = "English"
+
+        [languages.en.menu]
+
+            [[languages.en.menu.main]]
+            name = "About"
+            weight = 1
+            url = "about/"
+
+            #[[languages.en.menu.main]]
+            #name = "Blog"
+            #weight = 2
+            #url = "posts/"
+
+    [languages.pt-br]
+        languagename = "Español"
+
+        [languages.pt-br.params]
+            author = "João Ninguém"
+            info = "Estudiante de Doctorado en Ciencias de la Computación"
+            description = "Sitio web personal del Leandro Ordóñez"
+            keywords = "blog,desarrollador,personal"
+            footercontent = "Investigo mecanismos para el acceso a Big Data de manera rápida eficiente y confiable"
+
+        [languages.pt-br.menu]
+
+            [[languages.pt-br.menu.main]]
+            name = "Sobre mi"
+            weight = 1
+            url = "about/"
+
+            #[[languages.pt-br.menu.main]]
+            #name = "Blog"
+            #weight = 2
+            #url = "posts/"
