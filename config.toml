@@ -90,7 +90,7 @@ googleAnalytics = "UA-149589206-1"
         languagename = "Español"
 
         [languages.pt-br.params]
-            author = "João Ninguém"
+            author = "Leandro Ordóñez Ante"
             info = "Estudiante de Doctorado en Ciencias de la Computación"
             description = "Sitio web personal del Leandro Ordóñez"
             keywords = "blog,desarrollador,personal"
