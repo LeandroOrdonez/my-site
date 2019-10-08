@@ -1,0 +1,4 @@
+baseurl = "http://leandro.ordonez.studio"
+title = "Leandro Ordóñez Ante"
+theme = "hugo-coder"
+languagecode = "en"
