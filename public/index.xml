@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Leandro Ordóñez Ante</title>
+    <link>http://leandro.ordonez.studio/</link>
+    <description>Recent content on Leandro Ordóñez Ante</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    
+	<atom:link href="http://leandro.ordonez.studio/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+  </channel>
+</rss>
