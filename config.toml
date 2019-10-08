@@ -94,7 +94,7 @@ googleAnalytics = "UA-149589206-1"
             info = "Estudiante de Doctorado en Ciencias de la Computación"
             description = "Sitio web personal del Leandro Ordóñez"
             keywords = "blog,desarrollador,personal"
-            footercontent = "Investigo mecanismos para el acceso a Big Data de manera rápida eficiente y confiable"
+            footercontent = "Investigo mecanismos para el acceso a Big Data de manera rápida, eficiente y confiable"
 
         [languages.pt-br.menu]
 
