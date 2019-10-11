@@ -72,7 +72,7 @@ googleAnalytics = "UA-149589206-1"
 [[menu.main]]
     name = "About"
     weight = 2
-    url = "/about.md"
+    url = "/about/"
 
 # Language settings
 [languages]
