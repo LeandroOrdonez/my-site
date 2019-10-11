@@ -75,42 +75,42 @@ googleAnalytics = "UA-149589206-1"
     url = "/about/"
 
 # Language settings
-[languages]
-    [languages.en]
-        contentDir = "content/english"
-        languagename = "English"
+#[languages]
+#    [languages.en]
+#        contentDir = "content/english"
+#        languagename = "English"
 
-        [languages.en.menu]
+#        [languages.en.menu]
 
-            [[languages.en.menu.main]]
-            name = "About"
-            weight = 1
-            url = "about/"
+#            [[languages.en.menu.main]]
+#            name = "About"
+#            weight = 1
+#            url = "about/"
 
-            #[[languages.en.menu.main]]
-            #name = "Blog"
-            #weight = 2
-            #url = "posts/"
+#            #[[languages.en.menu.main]]
+#            #name = "Blog"
+#            #weight = 2
+#            #url = "posts/"
 
-    [languages.es-co]
-        contentDir = "content/spanish"
-        languagename = "Español"
+#    [languages.es-co]
+#        contentDir = "content/spanish"
+#        languagename = "Español"
 
-        [languages.es-co.params]
-            author = "Leandro Ordóñez Ante"
-            info = "Estudiante de Doctorado en Ciencias de la Computación"
-            description = "Sitio web personal del Leandro Ordóñez"
-            keywords = "blog,desarrollador,personal"
-            footercontent = "Investigo mecanismos para el acceso a Big Data de manera rápida, eficiente y confiable"
+#        [languages.es-co.params]
+#            author = "Leandro Ordóñez Ante"
+#            info = "Estudiante de Doctorado en Ciencias de la Computación"
+#            description = "Sitio web personal del Leandro Ordóñez"
+#            keywords = "blog,desarrollador,personal"
+#            footercontent = "Investigo mecanismos para el acceso a Big Data de manera rápida, eficiente y confiable"
 
-        [languages.es-co.menu]
+#        [languages.es-co.menu]
 
-            [[languages.es-co.menu.main]]
-            name = "Sobre mi"
-            weight = 1
-            url = "about/"
+#            [[languages.es-co.menu.main]]
+#            name = "Sobre mi"
+#            weight = 1
+#            url = "about/"
 
-            #[[languages.es-co.menu.main]]
-            #name = "Blog"
-            #weight = 2
-            #url = "posts/"
+#            #[[languages.es-co.menu.main]]
+#            #name = "Blog"
+#            #weight = 2
+#            #url = "posts/"
