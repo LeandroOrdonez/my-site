@@ -17,6 +17,6 @@ I'm a Colombian engineer currently pursuing a PhD in Computer Sciences at [IDLab
 * Twitter: [@OrdonezLeandro](http://twitter.com/OrdonezLeandro)
 * LinkedIn: [Leandro Ordóñez](https://www.linkedin.com/in/leandroordonez)
 
-Or you can always contact me at [leandro.ordonezante@ugent.be](leandro.ordonezante@ugent.be)
+Or you can always contact me at [Leandro.OrdonezAnte@UGent.be](mailto:leandro.ordonezante@ugent.be)
 
 Feel free to browse around! :)
