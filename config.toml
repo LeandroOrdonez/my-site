@@ -72,11 +72,12 @@ googleAnalytics = "UA-149589206-1"
 [[menu.main]]
     name = "About"
     weight = 2
-    url = "/about/"
+    url = "/about.md"
 
 # Language settings
 [languages]
     [languages.en]
+        contentDir = "content/english"
         languagename = "English"
 
         [languages.en.menu]
@@ -91,24 +92,25 @@ googleAnalytics = "UA-149589206-1"
             #weight = 2
             #url = "posts/"
 
-    [languages.pt-br]
+    [languages.es-co]
+        contentDir = "content/spanish"
         languagename = "Español"
 
-        [languages.pt-br.params]
+        [languages.es-co.params]
             author = "Leandro Ordóñez Ante"
             info = "Estudiante de Doctorado en Ciencias de la Computación"
             description = "Sitio web personal del Leandro Ordóñez"
             keywords = "blog,desarrollador,personal"
             footercontent = "Investigo mecanismos para el acceso a Big Data de manera rápida, eficiente y confiable"
 
-        [languages.pt-br.menu]
+        [languages.es-co.menu]
 
-            [[languages.pt-br.menu.main]]
+            [[languages.es-co.menu.main]]
             name = "Sobre mi"
             weight = 1
             url = "about/"
 
-            #[[languages.pt-br.menu.main]]
+            #[[languages.es-co.menu.main]]
             #name = "Blog"
             #weight = 2
             #url = "posts/"
