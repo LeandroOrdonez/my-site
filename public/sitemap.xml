@@ -3,15 +3,21 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://leandro.ordonez.studio/categories/</loc>
+    <loc>https://leandro.ordonez.studio/about/</loc>
+    <lastmod>2019-10-11T13:44:57+02:00</lastmod>
   </url>
   
   <url>
-    <loc>http://leandro.ordonez.studio/</loc>
+    <loc>https://leandro.ordonez.studio/</loc>
+    <lastmod>2019-10-11T13:44:57+02:00</lastmod>
   </url>
   
   <url>
-    <loc>http://leandro.ordonez.studio/tags/</loc>
+    <loc>https://leandro.ordonez.studio/categories/</loc>
+  </url>
+  
+  <url>
+    <loc>https://leandro.ordonez.studio/tags/</loc>
   </url>
   
 </urlset>

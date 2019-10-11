@@ -2,13 +2,23 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Leandro Ordóñez Ante</title>
-    <link>http://leandro.ordonez.studio/</link>
+    <link>https://leandro.ordonez.studio/</link>
     <description>Recent content on Leandro Ordóñez Ante</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
+    <lastBuildDate>Fri, 11 Oct 2019 13:44:57 +0200</lastBuildDate>
     
-	<atom:link href="http://leandro.ordonez.studio/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://leandro.ordonez.studio/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>About me</title>
+      <link>https://leandro.ordonez.studio/about/</link>
+      <pubDate>Fri, 11 Oct 2019 13:44:57 +0200</pubDate>
+      
+      <guid>https://leandro.ordonez.studio/about/</guid>
+      <description>I&amp;rsquo;m a Colombian engineer currently pursuing a PhD in Computer Sciences at IDLab - UGent. My research has been around enabling fast access to large data stored in heterogeneous and distributed data store technologies. I&amp;rsquo;m also founder of the BitBang Company a company devoted to bring the perks of Big Data and Data Analysis to business of all sizes. The company currently operates in Colombia with clients in South and Central America.</description>
+    </item>
     
   </channel>
 </rss>
