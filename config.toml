@@ -52,6 +52,11 @@ googleAnalytics = "UA-149589206-1"
     weight = 3
     url = "https://twitter.com/OrdonezLeandro/"
 [[params.social]]
+    name = "LinkedIn"
+    icon = "fab fa-likedin fa-2x"
+    weight = 3
+    url = "https://linkedin.com/in/leandroordonez"
+[[params.social]]
     name = "Stack Overflow"
     icon = "fab fa-stack-overflow fa-2x"
     weight = 3
