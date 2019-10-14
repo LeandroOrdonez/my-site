@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>https://leandro.ordonez.tech/es-co/</loc>
+    <lastmod>2019-10-11T14:30:34+02:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://leandro.ordonez.tech/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es-co"
+                href="https://leandro.ordonez.tech/es-co/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://leandro.ordonez.tech/es-co/about/</loc>
+    <lastmod>2019-10-11T14:30:34+02:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://leandro.ordonez.tech/about/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es-co"
+                href="https://leandro.ordonez.tech/es-co/about/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://leandro.ordonez.tech/es-co/categories/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://leandro.ordonez.tech/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es-co"
+                href="https://leandro.ordonez.tech/es-co/categories/"
+                />
+  </url>
+  
+  <url>
+    <loc>https://leandro.ordonez.tech/es-co/tags/</loc>
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="https://leandro.ordonez.tech/tags/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="es-co"
+                href="https://leandro.ordonez.tech/es-co/tags/"
+                />
+  </url>
+  
+</urlset>
