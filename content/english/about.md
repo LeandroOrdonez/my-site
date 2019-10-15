@@ -9,7 +9,7 @@ I'm a Colombian engineer currently pursuing a PhD in Computer Sciences at [IDLab
 #### Interests
 
 * Machine Learning (Clustering, probabilistic topic models, bayesian inference)
-* Software development (`Python`, `Java`, `NodeJS`, `HTML`, `CSS`)
+* Software development (`Python`, `Java`, `Node.js`)
 * Academic research (Big Data, Web, Semantics, Data engineering and Data management, Distributed systems)
 
 #### Social media handles
