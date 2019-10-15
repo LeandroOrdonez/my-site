@@ -9,7 +9,7 @@ Soy un ingeniero colombiano y estudiante de doctorado en Ciencias de la Computac
 #### Intereses
 
 * Aprendizaje Automático (Clustering, probabilistic topic models, bayesian inference)
-* Software development (`Python`, `Java`, `Node.js`)
+* Desarrollo de software (`Python`, `Java`, `Node.js`)
 * Investigación académica (Big Data, Web, Semantics, Data engineering and Data management, Distributed systems)
 
 #### Social media
