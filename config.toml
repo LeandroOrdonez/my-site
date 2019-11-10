@@ -65,13 +65,17 @@ googleAnalytics = "UA-149589206-1"
     
 
 # Menu links
-#[[menu.main]]
-#    name = "Blog"
-#    weight = 1
-#    url  = "/posts/"
+[[menu.main]]
+    name = "Scrapbook"
+    weight = 1
+    url  = "/ideas/"
+[[menu.main]]
+    name = "Publications"
+    weight = 2
+    url  = "/publications/"
 [[menu.main]]
     name = "About"
-    weight = 2
+    weight = 3
     url = "/about/"
 
 # Language settings
@@ -83,14 +87,19 @@ googleAnalytics = "UA-149589206-1"
         [languages.en.menu]
 
             [[languages.en.menu.main]]
-            name = "About"
+            name = "Scrapbook"
             weight = 1
-            url = "about/"
+            url = "ideas/"
 
-            #[[languages.en.menu.main]]
-            #name = "Blog"
-            #weight = 2
-            #url = "posts/"
+            [[languages.en.menu.main]]
+            name = "Publications"
+            weight = 2
+            url = "publications/"
+
+            [[languages.en.menu.main]]
+            name = "About"
+            weight = 3
+            url = "about/"
 
     [languages.es-co]
         contentDir = "content/spanish"
@@ -106,11 +115,16 @@ googleAnalytics = "UA-149589206-1"
         [languages.es-co.menu]
 
             [[languages.es-co.menu.main]]
-            name = "Sobre mi"
+            name = "Scrapbook"
             weight = 1
-            url = "about/"
+            url = "ideas/"
 
-            #[[languages.es-co.menu.main]]
-            #name = "Blog"
-            #weight = 2
-            #url = "posts/"
+            [[languages.es-co.menu.main]]
+            name = "Publicaciones"
+            weight = 2
+            url = "publications/"
+            
+            [[languages.es-co.menu.main]]
+            name = "Sobre mi"
+            weight = 3
+            url = "about/"
