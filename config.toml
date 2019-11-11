@@ -11,7 +11,7 @@ pygmentsstyle = "bw"
 pygmentscodefences = true
 pygmentscodefencesguesssyntax = true
 
-disqusShortname = "yourdiscussshortname"
+disqusShortname = "personal-site-of-leandro-ordonez"
 
 googleAnalytics = "UA-149589206-1"
 
