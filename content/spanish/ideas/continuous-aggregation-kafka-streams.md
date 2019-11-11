@@ -6,7 +6,7 @@ tags = ["kafka", "streams", "aggregation"]
 categories = ["Data management", "IoT"]
 +++
 
-{{< figure src="/images/ideas/IMG_20180108_092149699_HDR.jpg" caption="Lago el Bolsón in Popayán, Colombia, my home town :)" >}}
+{{< figure src="/images/ideas/lago-bolson.jpg" caption="Lago el Bolsón in Popayán, Colombia, my home town :)" >}}
 
 In this post I show a method to address the computation of the arithmetic mean of an stream of values (say sensor readings) using the Kafka Streams DSL. The estimation of the average in a stream processing setting implies keeping track of other two measurements, namely the count of incoming records and the sum of their corresponding values. Let's consider a Kafka streams application consuming messages from a topic to which the readings of multiple temperature sensors are being posted (`temperature-readings`). The messages from said topic are keyed by the sensor ID, and we want to compute the rolling average of the temperature sensed by each device. 
 
