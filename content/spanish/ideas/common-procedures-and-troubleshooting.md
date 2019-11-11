@@ -8,7 +8,7 @@ categories = ["Programming", "Data management", "Research"]
 
 {{< figure src="/images/ideas/yak-shaving.jpg" caption="Photo by [Lieve Ransijn](https://unsplash.com/@lievemax) on [Unsplash](https://unsplash.com/photos/FsJ_vzp_NI4)" >}}
 
-This is a "*curated*" list of pointers I have found handy in my long coding sessions (a major part of which I still spend [yak shaving](https://www.techopedia.com/definition/15511/yak-shaving) someone else's code).
+This is a "*curated*" list of pointers I have found handy during my long coding sessions (a major part of which I still spend [yak shaving](https://www.techopedia.com/definition/15511/yak-shaving) someone else's code).
 
 ### Angular related:
 * [Reloading current route in Angular 5 / Angular 6 (reload component when clicking browser's back button)](https://medium.com/engineering-on-the-incline/reloading-current-route-on-click-angular-5-1a1bfc740ab2)
