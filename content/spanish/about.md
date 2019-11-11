@@ -4,7 +4,7 @@ date: 2019-10-11T14:30:34+02:00
 draft: false
 ---
 
-Soy un ingeniero colombiano y estudiante de doctorado en Ciencias de la Computación dentro del grupo de investigación [IDLab](https://idlab.technology/) - [UGent](https://www.ugent.be/) en Bélgica. Mi trabajo de investigación tiene que ver con optimizar el acceso a grandes colecciones de datos almacenados en sistemas heterogeneos y distribuidos. También soy el fundador de [BitBang Company](https://www.thebitbang.company) una empresa dedicada a acercar las ventajas y beneficios del analisis de datos a gran escala a compañías de todos los tamaños. Actualmente la empresa opera en Colombia y cuenta con clientes en Centro y sr-América.
+Soy un ingeniero colombiano y estudiante de doctorado en Ciencias de la Computación dentro del grupo de investigación [IDLab](https://idlab.technology/) - [UGent](https://www.ugent.be/) en Bélgica. Mi trabajo de investigación tiene que ver con optimizar el acceso a grandes colecciones de datos almacenados en sistemas heterogeneos y distribuidos. También soy el fundador de [BitBang Company](https://www.thebitbang.company) una empresa dedicada a acercar las ventajas y beneficios del analisis de datos a gran escala a compañías de todos los tamaños. Actualmente la empresa opera en Colombia y cuenta con clientes en Centro y Sur América.
 
 #### Intereses
 
