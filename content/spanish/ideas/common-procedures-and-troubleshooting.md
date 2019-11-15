@@ -17,7 +17,7 @@ This is a "*curated*" list of pointers I have found handy during my long coding 
 * [How to prevent robots from crawling an Angular application](https://jeffshamley.com/blogs/how-block-robots-crawling-your-angular-application)
 * [`ng-number-picker`](https://www.npmjs.com/package/ng-number-picker)
 
-### Data analysis in Python:
+### Python Dev and Data analysis:
 * [`Matplotlib`: Save images in high quality (EPS, PDF)](https://stackoverflow.com/questions/16183462/saving-images-in-python-at-a-very-high-quality)
 * [`Matplotlib`: Prevent plot labels from getting cut off when saving them](https://stackoverflow.com/questions/21288062/second-y-axis-label-getting-cut-off/21288063)
 * [`Matplotlib`: How to put the legend out of the plot](https://stackoverflow.com/a/4701285/2412831)
@@ -46,6 +46,7 @@ This is a "*curated*" list of pointers I have found handy during my long coding 
 * [Creating a grid based on GeoHashes](https://blog.tafkas.net/2018/09/28/creating-a-grid-based-on-geohashes/)
 * [Time series distances: Dynamic Time Warping (DTW) ](https://github.com/wannesm/dtaidistance)
 * [Running `Flask` in production with Docker](https://medium.com/@smirnov.am/running-flask-in-production-with-docker-1932c88f14d0)
+* [Build a RESTful API with Flask – The TDD Way](https://scotch.io/tutorials/build-a-restful-api-with-flask-the-tdd-way)
 
 ### Docker & Kubernetes related:
 * [How To Build a Node.js Application with Docker](https://www.digitalocean.com/community/tutorials/how-to-build-a-node-js-application-with-docker)
