@@ -22,8 +22,8 @@ googleAnalytics = "UA-149589206-1"
     keywords = "blog,developer,personal"
     avatarurl = "images/avatar.jpg"
 
-    favicon_32 = "/img/favicon-32x32.png"
-    favicon_16 = "/img/favicon-16x16.png"
+    # favicon_32 = "/img/favicon-32x32.png"
+    favicon_16 = "images/favicon-16x16.png"
 
     footercontent = "Researching mechanisms for accessing large data in fast, efficient and reliable ways"
 
@@ -33,7 +33,7 @@ googleAnalytics = "UA-149589206-1"
     rtl = false
 
     math = true
-    custom_css = ["css/custom.css"]
+    # custom_css = ["css/custom.css"]
 
 # Social links
 [[params.social]]
