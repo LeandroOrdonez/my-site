@@ -6,6 +6,8 @@ draft: false
 
 Papers I have published (either as first author or co-author):
 
+* *[Ordonez Ante, L.](https://scholar.google.be/citations?user=kxSgexYAAAAJ&hl=en)*, Van Seghbroeck, G., Wauters, T., Volckaert, B., & De Turck, F. (2020) [**A Workload-Driven Approach for View Selection in Large Dimensional Datasets**](https://rdcu.be/b2YnJ). J Netw Syst Manage (2020). https://doi.org/10.1007/s10922-020-09526-z
+
 * *[Ordonez Ante, L.](https://scholar.google.be/citations?user=kxSgexYAAAAJ&hl=en)*, Van Seghbroeck, G., Wauters, T., Volckaert, B., & De Turck, F. (2019). [**Automatic view selection for distributed dimensional data**](https://www.scitepress.org/PublicationsDetail.aspx?ID=WSrr2zJdAbw%3d&t=1). In IoTBDS2019, the 4th International Conference on Internet of Things, Big Data and Security (pp. 17-28). 
 
 * *[Ordonez Ante, L.](https://scholar.google.be/citations?user=kxSgexYAAAAJ&hl=en)*, Vanhove, T., Van Seghbroeck, G., Wauters, T., Volckaert, B., & De Turck, F. (2017, December). [**Dynamic data transformation for low latency querying in big data systems**](https://ieeexplore.ieee.org/abstract/document/8258206). In 2017 IEEE International Conference on Big Data (Big Data) (pp. 2480-2489). IEEE.
