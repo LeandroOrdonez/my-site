@@ -6,7 +6,7 @@ draft: false
 
 Artículos que he publicado (como autor principal o como co-autor):
 
-* *[Ordonez Ante, L.](https://scholar.google.be/citations?user=kxSgexYAAAAJ&hl=en)*, Van Seghbroeck, G., Wauters, T., Volckaert, B., & De Turck, F. (2020) [**A Workload-Driven Approach for View Selection in Large Dimensional Datasets**](https://rdcu.be/b2YnJ). J Netw Syst Manage (2020). https://doi.org/10.1007/s10922-020-09526-z
+* *[Ordonez Ante, L.](https://scholar.google.be/citations?user=kxSgexYAAAAJ&hl=en)*, Van Seghbroeck, G., Wauters, T., Volckaert, B., & De Turck, F. (2020) [**A Workload-Driven Approach for View Selection in Large Dimensional Datasets**](https://rdcu.be/b2YnJ). Journal of Network and Systems Management (2020). https://doi.org/10.1007/s10922-020-09526-z
 
 * *[Ordonez Ante, L.](https://scholar.google.be/citations?user=kxSgexYAAAAJ&hl=en)*, Van Seghbroeck, G., Wauters, T., Volckaert, B., & De Turck, F. (2019). [**Automatic view selection for distributed dimensional data**](https://www.scitepress.org/PublicationsDetail.aspx?ID=WSrr2zJdAbw%3d&t=1). In IoTBDS2019, the 4th International Conference on Internet of Things, Big Data and Security (pp. 17-28). 
 
@@ -22,6 +22,6 @@ Artículos que he publicado (como autor principal o como co-autor):
 
 * Rojas-Potosi, L. A., Suarez-Meza, L. J., *[Ordonez Ante, L.](https://scholar.google.be/citations?user=kxSgexYAAAAJ&hl=en)*, & Corrales, J. C. (2012, March). [**Web Resources Recommendation based on Dynamic Prediction of User Consumption on the Social Web**](https://www.aaai.org/ocs/index.php/SSS/SSS12/paper/viewPaper/4348). In 2012 AAAI Spring Symposium Series.
 
-* *[Ordonez Ante, L.](https://scholar.google.be/citations?user=kxSgexYAAAAJ&hl=en)*, Rojas-Potosi, L. A., Suarez-Meza, L. J., & Corrales, J. C. (2012). [**Towards the automation of the semantic annotation process for Web services**](https://search.proquest.com/docview/1425876752?accountid=11077). In Proceedings of the International Conference on Semantic Web and Web Services (SWWS) (p. 1). The Steering Committee of The World Congress in Computer Science, Computer Engineering and Applied Computing (WorldComp).
+* *[Ordonez Ante, L.](https://scholar.google.be/citations?user=kxSgexYAAAAJ&hl=en)*, Rojas-Potosi, L. A., Suarez-Meza, L. J., & Corrales, J. C. (2012). [**Towards the automation of the semantic annotation process for Web services**](https://www.semanticscholar.org/paper/Towards-the-Automation-of-the-Semantic-Annotation-Ordo%C3%B1ez-Ante-Rojas-Potos%C3%AD/ad7d959d49bc506146b3546194754b5513421862). In Proceedings of the International Conference on Semantic Web and Web Services (SWWS) (p. 1). The Steering Committee of The World Congress in Computer Science, Computer Engineering and Applied Computing (WorldComp).
 
 * *[Ordonez Ante, L.](https://scholar.google.be/citations?user=kxSgexYAAAAJ&hl=en)*, Bastidas Narváez, A. X., & Corrales, J. C. (2012). [**Semantic similarity estimation of tasks between telecommunications business processes**](http://www.scielo.org.co/scielo.php?pid=S1794-91652012000100004&script=sci_arttext&tlng=pt). Ingeniería y Ciencia, 8(15), 65-95.
