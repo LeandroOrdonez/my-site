@@ -6,7 +6,7 @@ tags = ["kafka", "streams", "iot", "sensor", "data"]
 categories = ["Programming", "Data management", "Stream processing"]
 +++
 
-{{< figure src="/images/ideas/map0.jpg" caption="Photo by [Thor Alvis](https://unsplash.com/@terminath0r) on [Unsplash](https://unsplash.com/photos/dWwZBcjw3GE)" >}}
+{{< figure src="/images/ideas/map0-min.jpg" caption="Photo by [Thor Alvis](https://unsplash.com/@terminath0r) on [Unsplash](https://unsplash.com/photos/dWwZBcjw3GE)" >}}
 
 In case you are ever in need of some toy data to get you started with a data project, or just to test your ideas or implementations, I think you might find the Docker setup in [this repo](https://github.com/LeandroOrdonez/temp-readings-gen/blob/master/README.md) useful. It allows generating synthetic sensor readings of geolocated temperature data, and posting each record to a Kafka topic. The readings generated follow the format specified in the sample records below:
 

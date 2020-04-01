@@ -6,7 +6,7 @@ tags = ["troubleshooting", "programming", "yak shaving"]
 categories = ["Programming", "Data management", "Research"]
 +++
 
-{{< figure src="/images/ideas/yak-shaving.jpg" caption="Photo by [Lieve Ransijn](https://unsplash.com/@lievemax) on [Unsplash](https://unsplash.com/photos/FsJ_vzp_NI4)" >}}
+{{< figure src="/images/ideas/yak-shaving-min.jpg" caption="Photo by [Lieve Ransijn](https://unsplash.com/@lievemax) on [Unsplash](https://unsplash.com/photos/FsJ_vzp_NI4)" >}}
 
 This is a "*curated*" list of pointers I have found handy during my long coding sessions (a major part of which I still spend [yak shaving](https://www.techopedia.com/definition/15511/yak-shaving) someone else's code).
 
