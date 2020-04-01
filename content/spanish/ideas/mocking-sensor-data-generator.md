@@ -54,7 +54,7 @@ kafka-console-consumer.sh \
     --property value.deserializer=org.apache.kafka.common.serialization.StringDeserializer
 ```
 
-Below you can see the time-series chart of the typical generated values throughout one day:
+Below you can see the time-series chart of the typical values generated throughout one day:
 
 {{< figure src="/images/ideas/daily-temp-fluctuation.png" class="center" caption="Time-series chart of the generated temperature values" >}}
 
