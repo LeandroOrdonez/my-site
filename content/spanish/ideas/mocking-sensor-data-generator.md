@@ -53,4 +53,10 @@ kafka-console-consumer.sh \
     --property key.deserializer=org.apache.kafka.common.serialization.StringDeserializer \
     --property value.deserializer=org.apache.kafka.common.serialization.StringDeserializer
 ```
-And there you go, a running network of mobile sensors generating mock temperature data and pushing it into a Kafka topic. You can use this Docker setup to try, for instance, the Kafka streams application we discussed in a [previous post](https://leandro.ordonez.tech/ideas/continuous-aggregation-kafka-streams/), allowing the continuous aggregation of a stream of sensor data.
+
+Below you can see the time-series chart of the typical generated values throughout one day:
+
+{{< figure src="/images/ideas/daily-temp-fluctuation.png" class="center" caption="Time-series chart of the generated temperature values" >}}
+
+And there you go, a running network of mobile sensors generating mock temperature data and pushing it into a Kafka topic. You can use this Docker setup to try, for instance, the Kafka streams application we discussed in a [previous post](https://leandro.ordonez.tech/ideas/continuous-aggregation-kafka-streams/), allowing the continuous aggregation of a stream of sensor data. 
+
