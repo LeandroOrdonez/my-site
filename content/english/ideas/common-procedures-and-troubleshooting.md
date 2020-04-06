@@ -62,6 +62,7 @@ This is a "*curated*" list of pointers I have found handy during my long coding 
 * [`K8s`, `juju`: Kubernetes Core bundle](https://jaas.ai/kubernetes-core/bundle/815)
 * [`K8S`, `juju`: Restart K8s related services manually (for the juju bundle)](https://github.com/charmed-kubernetes/bundle/issues/357#issuecomment-316542831)
 * [`K8S`: How to fix — Kubernetes `namespace` deleting stuck in Terminating state](https://medium.com/@clouddev.guru/how-to-fix-kubernetes-namespace-deleting-stuck-in-terminating-state-5ed75792647e)
+* [Build and Push to Docker With Maven](https://medium.com/better-programming/build-push-to-docker-with-maven-eea7c4b8cfa2)
 
 ### Git related
 * [Remove submodule](https://stackoverflow.com/a/16162000/2412831)
