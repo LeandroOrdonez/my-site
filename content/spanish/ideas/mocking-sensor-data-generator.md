@@ -58,5 +58,5 @@ Below you can see the time-series chart of the typical values generated througho
 
 {{< figure src="/images/ideas/daily-temp-fluctuation.png" class="center" caption="Time-series chart of the generated temperature values" >}}
 
-And there you go, a running network of mobile sensors generating mock temperature data and pushing it into a Kafka topic. You can use this Docker setup to try, for instance, the Kafka streams application we discussed in a [previous post](https://leandro.ordonez.tech/ideas/continuous-aggregation-kafka-streams/), allowing the continuous aggregation of a stream of sensor data. 
+And there you go, a running network of mobile sensors generating mock temperature data and pushing it into a Kafka topic. You can use this Docker setup to try, for instance, the Kafka streams application we discussed in [this post](https://leandro.ordonez.tech/ideas/interactive-querying-kafka-streams/), allowing the continuous aggregation of a stream of sensor data. 
 
