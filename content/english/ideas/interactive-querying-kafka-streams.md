@@ -6,7 +6,7 @@ tags = ["kafka", "streams", "querying", "iot", "sensor", "data"]
 categories = ["Programming", "Data management", "Stream processing"]
 +++
 
-{{< figure src="/images/ideas/data_pipeline.png" class="center" caption="Data Pipeline by [xkcd.com](https://xkcd.com/2054/)" >}}
+{{< figure src="https://imgs.xkcd.com/comics/data_pipeline.png" class="center" caption="Data Pipeline by [xkcd.com](https://xkcd.com/2054/)" >}}
 
 In a [previous post](https://leandro.ordonez.tech/ideas/continuous-aggregation-kafka-streams/) we explored a method for performing continuous aggregation on a stream of sensor readings using the Kafka Streams DSL. This time I want to share with you [`kafka-streams-pipeline`](https://github.com/LeandroOrdonez/kafka-streams-pipeline), a Kafka Streams application that leverages said continuous aggregation method and defines a complete stream processing pipeline, which enables querying the continuous data summaries stored into a materialized `KTable`, by incorporating the spatial and temporal dimensions of the sensor data to the analysis. To understand how this application works, let’s first get back to the `temperature-readings` topic from the previous post. In this topic the feed of temperature measurements made by multiple sensors is being posted. The following is an excerpt of the measurements registered in `temperature-readings`:
 
