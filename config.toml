@@ -19,7 +19,7 @@ googleAnalytics = "UA-149589206-1"
     author = "Leandro Ordóñez Ante"
     info = "PhD Researcher in Computer Sciences"
     description = "Leandro Ordóñez's personal website"
-    keywords = "blog,developer,personal"
+    keywords = "blog,developer,personal,big data,apache kafka,java,python,pandas,iot,time series"
     avatarurl = "images/avatar.jpg"
 
     # favicon_32 = "/img/favicon-32x32.png"
