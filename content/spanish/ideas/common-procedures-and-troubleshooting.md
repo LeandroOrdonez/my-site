@@ -75,6 +75,10 @@ This is a "*curated*" list of pointers I have found handy during my long coding 
 #### Fix connection issues between the namenode and datanodes:
 * [`Connection Refused`](https://wiki.apache.org/hadoop/ConnectionRefused)
 
+### Java related:
+
+* [`maven` Accessing resource files inside a jar: Java properties file in jar not found when running jar](https://stackoverflow.com/a/41347321/2412831)
+
 ### KafKa related:
 
 * [`Kafka Streams`: How to compute an (windowed) average?](https://cwiki.apache.org/confluence/display/KAFKA/Kafka+Stream+Usage+Patterns)
