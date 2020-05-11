@@ -6,6 +6,8 @@ draft: false
 
 Artículos que he publicado (como autor principal o como co-autor):
 
+* *[Ordonez Ante, L.](https://scholar.google.be/citations?user=kxSgexYAAAAJ&hl=en)*, Van Seghbroeck, G., Wauters, T., Volckaert, B., & De Turck, F. (2020)[**EXPLORA: Interactive Querying of Multidimensional Data in the Context of Smart Cities**](https://www.mdpi.com/1424-8220/20/9/2737). Sensors 2020, 20, 2737.
+
 * *[Ordonez Ante, L.](https://scholar.google.be/citations?user=kxSgexYAAAAJ&hl=en)*, Van Seghbroeck, G., Wauters, T., Volckaert, B., & De Turck, F. (2020) [**A Workload-Driven Approach for View Selection in Large Dimensional Datasets**](https://rdcu.be/b2YnJ). Journal of Network and Systems Management (2020). https://doi.org/10.1007/s10922-020-09526-z
 
 * *[Ordonez Ante, L.](https://scholar.google.be/citations?user=kxSgexYAAAAJ&hl=en)*, Van Seghbroeck, G., Wauters, T., Volckaert, B., & De Turck, F. (2019). [**Automatic view selection for distributed dimensional data**](https://www.scitepress.org/PublicationsDetail.aspx?ID=WSrr2zJdAbw%3d&t=1). In IoTBDS2019, the 4th International Conference on Internet of Things, Big Data and Security (pp. 17-28). 
