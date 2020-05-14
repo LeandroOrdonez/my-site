@@ -78,6 +78,7 @@ This is a "*curated*" list of pointers I have found handy during my long coding 
 ### Java related:
 
 * [`maven` Accessing resource files inside a jar: Java properties file in jar not found when running jar](https://stackoverflow.com/a/41347321/2412831)
+* [`Jetty`, `REST`, `CORS`: Embedding Jetty Server with Jersey as RESTful container with CORS](https://medium.com/@aruny/embedding-jetty-server-with-jersey-as-restful-container-with-cors-a3ea3c5381c9)
 
 ### KafKa related:
 
