@@ -23,7 +23,7 @@
       "description": {{ .Summary | plainify | safeHTML }},
       "keywords": [{{ range $i, $e := .Params.tags }}{{ if $i }}, {{ end }}{{ $e }}{{ end }}]
     }
-    {{ end }}
+    {{ else }}
     {
       "@context": "https://schema.org",
       "@type": "Person",
@@ -37,4 +37,5 @@
         "https://stackoverflow.com/story/{{ .Site.Params.stackoverflow }}",
       ]
     }
+    {{end}}
     </script>
