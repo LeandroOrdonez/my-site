@@ -12,14 +12,6 @@
         "name": {{ .Site.Params.author }}
       },
       "mainEntityOfPage": { "@type": "WebPage" },
-       "publisher": {
-        "@type": "Person",
-        "name": {{ .Site.Params.header }},
-        "logo": {
-          "@type": "ImageObject",
-          "url": {{ .Site.Params.logo }}
-        }
-      },
       "description": {{ .Summary | plainify | safeHTML }},
       "keywords": [{{ range $i, $e := .Params.tags }}{{ if $i }}, {{ end }}{{ $e }}{{ end }}]
     }
@@ -29,6 +21,36 @@
       "@type": "Person",
       "name": {{ .Site.Params.header }},
       "url": {{ .Site.BaseURL }},
+      "nationality": "Colombian",
+      "birthPlace" : {
+        "@type": "Place",
+          "address": {
+            "@type": "PostalAddress",
+          "addressLocality": "Popayan",
+          "addressCountry": "Colombia"
+        }
+      },
+      "affiliation": [
+        {
+          "@type": "Organization",
+          "name": "Ghent University",
+          "sameAs": [
+            "https://twitter.com/ugent",
+            "https://www.facebook.com/ugent /",
+            "https://www.linkedin.com/ghent-university/",
+            "https://www.youtube.com/user/UniversiteitGent"
+          ]
+        },
+        {
+          "@type": "Organization",
+          "name": "The BitBang Co.",
+          "sameAs": [
+            "https://twitter.com/bitbangcompany",
+            "https://www.facebook.com/bitbangcompany /",
+            "https://www.linkedin.com/company/tbbc/"
+          ]
+        }
+      ],
       "sameAs": [
         "https://github.com/{{ .Site.Params.github }}",
         "https://gitlab.ilabt.imec.be/{{ .Site.Params.gitlab }}",
