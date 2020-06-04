@@ -12,6 +12,11 @@
         "name": {{ .Site.Params.author }}
       },
       "mainEntityOfPage": { "@type": "WebPage" },
+      "publisher": {
+        "@type": "Person",
+        "name": {{ .Site.Params.header }},
+        "url": {{ .Site.BaseURL }}
+      },
       "description": {{ .Summary | plainify | safeHTML }},
       "keywords": [{{ range $i, $e := .Params.tags }}{{ if $i }}, {{ end }}{{ $e }}{{ end }}]
     }
