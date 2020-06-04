@@ -1,0 +1,40 @@
+<script type="application/ld+json">
+    {{ if eq .Section "ideas" }}
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": {{ .Title }},
+      "image": {{ .Params.featuredImage | absURL }},
+      "datePublished": {{ .PublishDate }},
+      "dateModified": {{ .Lastmod }},
+      "author": {
+        "@type": "Person",
+        "name": {{ .Site.Params.author }}
+      },
+      "mainEntityOfPage": { "@type": "WebPage" },
+       "publisher": {
+        "@type": "Person",
+        "name": {{ .Site.Params.header }},
+        "logo": {
+          "@type": "ImageObject",
+          "url": {{ .Site.Params.logo }}
+        }
+      },
+      "description": {{ .Summary | plainify | safeHTML }},
+      "keywords": [{{ range $i, $e := .Params.tags }}{{ if $i }}, {{ end }}{{ $e }}{{ end }}]
+    }
+    {{ end }}
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": {{ .Site.Params.header }},
+      "url": {{ .Site.BaseURL }},
+      "sameAs": [
+        "https://github.com/{{ .Site.Params.github }}",
+        "https://gitlab.ilabt.imec.be/{{ .Site.Params.gitlab }}",
+        "https://twitter.com/{{ .Site.Params.twitter }}",
+        "https://linkedin.com/in/{{ .Site.Params.linkedin }}"
+        "https://stackoverflow.com/story/{{ .Site.Params.stackoverflow }}",
+      ]
+    }
+    </script>

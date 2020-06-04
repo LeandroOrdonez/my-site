@@ -35,6 +35,14 @@ googleAnalytics = "UA-149589206-1"
     math = true
     custom_css = ["css/custom.css"]
 
+    logo = "images/avatar.jpg"
+    header = "Leandro Ordóñez Ante"
+    github = "LeandroOrdonez"
+    gitlab = "lordezan"
+    twitter = "OrdonezLeandro"
+    linkedin = "leandroordonez"
+    stackoverflow = "leandroordonez"
+
 # Social links
 [[params.social]]
     name = "Github"
