@@ -13,9 +13,12 @@
       },
       "mainEntityOfPage": { "@type": "WebPage" },
       "publisher": {
-        "@type": "Person",
+        "@type": "Organization",
         "name": {{ .Site.Params.header }},
-        "url": {{ .Site.BaseURL }}
+        "logo": {
+          "@type": "ImageObject",
+          "url": {{ .Site.Params.avatarurl }}
+        }
       },
       "description": {{ .Summary | plainify | safeHTML }},
       "keywords": [{{ range $i, $e := .Params.tags }}{{ if $i }}, {{ end }}{{ $e }}{{ end }}]
