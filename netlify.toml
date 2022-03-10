@@ -29,3 +29,9 @@ HUGO_VERSION = "0.69.2"
 [context.next.environment]
 HUGO_ENABLEGITINFO = "true"
 
+## This rule redirects to an external API, signing requests with a secret
+[[redirects]]
+  from = "/phd/dissertation"
+  to = "https://cloud.ilabt.imec.be/index.php/s/83jpXHMdsQ4Cem9"
+  status = 301
+  force = true # COMMENT: ensure that we always redirect
