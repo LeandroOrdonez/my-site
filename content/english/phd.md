@@ -7,7 +7,7 @@ draft: false
 Doctoral dissertation submitted to obtain the academic degree of Doctor of Computer Science Engineering from [Ghent University](https://www.ugent.be/).
 
 
-{{< figure src="/images/phd/cover-01210475.png" caption="Download a digital copy [here (PDF)](https://cloud.ilabt.imec.be/index.php/s/83jpXHMdsQ4Cem9)" >}}
+{{< figure src="/images/phd/cover-01210475.png" caption="Download a digital copy [here (PDF)](https://leandro.ordonez.tech/phd/dissertation)" >}}
 
 ## Thesis summary
 ---
