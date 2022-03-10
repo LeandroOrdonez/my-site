@@ -1,14 +1,1 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Categories on Leandro Ordóñez Ante</title>
-    <link>https://leandro.ordonez.tech/es-co/categories/</link>
-    <description>Recent content in Categories on Leandro Ordóñez Ante</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    
-	<atom:link href="https://leandro.ordonez.tech/es-co/categories/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Categories on Leandro Ordóñez Ante</title><link>https://leandro.ordonez.tech/es-co/categories/</link><description>Recent content in Categories on Leandro Ordóñez Ante</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sun, 05 Apr 2020 14:10:33 +0100</lastBuildDate><atom:link href="https://leandro.ordonez.tech/es-co/categories/index.xml" rel="self" type="application/rss+xml"/><item><title>Data management</title><link>https://leandro.ordonez.tech/es-co/categories/data-management/</link><pubDate>Sun, 05 Apr 2020 14:10:33 +0100</pubDate><guid>https://leandro.ordonez.tech/es-co/categories/data-management/</guid><description/></item><item><title>Programming</title><link>https://leandro.ordonez.tech/es-co/categories/programming/</link><pubDate>Sun, 05 Apr 2020 14:10:33 +0100</pubDate><guid>https://leandro.ordonez.tech/es-co/categories/programming/</guid><description/></item><item><title>Stream processing</title><link>https://leandro.ordonez.tech/es-co/categories/stream-processing/</link><pubDate>Sun, 05 Apr 2020 14:10:33 +0100</pubDate><guid>https://leandro.ordonez.tech/es-co/categories/stream-processing/</guid><description/></item><item><title>Research</title><link>https://leandro.ordonez.tech/es-co/categories/research/</link><pubDate>Mon, 11 Nov 2019 20:29:41 +0100</pubDate><guid>https://leandro.ordonez.tech/es-co/categories/research/</guid><description/></item><item><title>IoT</title><link>https://leandro.ordonez.tech/es-co/categories/iot/</link><pubDate>Thu, 17 Oct 2019 10:45:27 +0200</pubDate><guid>https://leandro.ordonez.tech/es-co/categories/iot/</guid><description/></item></channel></rss>

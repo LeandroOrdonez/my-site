@@ -4,7 +4,7 @@ date: 2019-10-11T13:44:57+02:00
 draft: false
 ---
 
-I'm an electronics engineer currently pursuing a PhD in Computer Sciences at [IDLab](https://idlab.technology/) - [UGent](https://www.ugent.be/). My research has been around enabling fast access to large data stored in heterogeneous and distributed data store technologies. I'm also one of the founders of the [BitBang Company](https://thebitbang.company), a company devoted to bring the perks of Big Data and Data Analysis to businesses of all sizes. The company currently operates in Colombia with clients in South and Central America.
+I'm an data engineer and Ph.D. in Computer Sciences Engineerting from [IDLab](https://idlab.technology/) - [UGent](https://www.ugent.be/). My research has been around enabling fast access to large data stored in heterogeneous and distributed data storage technologies. I'm also one of the founders of the [BitBang Company](https://thebitbang.company), a company devoted to bring the perks of Big Data and Data Analysis to businesses of all sizes. The company currently operates in Colombia with clients in South and Central America.
 
 #### Interests and skills
 

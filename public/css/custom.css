@@ -1,0 +1,17 @@
+.center {
+    text-align: center;        
+}
+
+figure {
+    text-align: center; 
+}
+
+.img60 img {
+    width: 60%;
+    height: auto;
+}
+
+.img75 img {
+    width: 75%;
+    height: auto;
+}

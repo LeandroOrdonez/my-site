@@ -17,7 +17,7 @@ googleAnalytics = "UA-149589206-1"
 
 [params]
     author = "Leandro Ordóñez Ante"
-    info = "PhD Researcher in Computer Sciences"
+    info = "Data Engineer | PhD in Computer Science Engineering"
     description = "Leandro Ordóñez's personal website"
     keywords = "blog,developer,personal,big data,apache kafka,java,python,pandas,iot,time series"
     avatarurl = "images/avatar.jpg"
@@ -82,8 +82,12 @@ googleAnalytics = "UA-149589206-1"
     weight = 2
     url  = "/publications/"
 [[menu.main]]
-    name = "About"
+    name = "PhD"
     weight = 3
+    url  = "/phd/"
+[[menu.main]]
+    name = "About"
+    weight = 4
     url = "/about/"
 
 # Language settings
@@ -105,8 +109,13 @@ googleAnalytics = "UA-149589206-1"
             url = "publications/"
 
             [[languages.en.menu.main]]
-            name = "About"
+            name = "PhD"
             weight = 3
+            url = "phd/"
+
+            [[languages.en.menu.main]]
+            name = "About"
+            weight = 4
             url = "about/"
 
     [languages.es-co]
@@ -115,7 +124,7 @@ googleAnalytics = "UA-149589206-1"
 
         [languages.es-co.params]
             author = "Leandro Ordóñez Ante"
-            info = "Estudiante de Doctorado en Ciencias de la Computación"
+            info = "Ingeniero de Datos y Doctor en Ciencias de la Computación"
             description = "Sitio web personal del Leandro Ordóñez"
             keywords = "blog,desarrollador,personal"
             footercontent = "Investigo mecanismos para el acceso a Big Data de manera rápida, eficiente y confiable"
@@ -131,8 +140,13 @@ googleAnalytics = "UA-149589206-1"
             name = "Publicaciones"
             weight = 2
             url = "publications/"
+
+            [[languages.es-co.menu.main]]
+            name = "PhD"
+            weight = 3
+            url = "phd/"
             
             [[languages.es-co.menu.main]]
             name = "Sobre mi"
-            weight = 3
+            weight = 4
             url = "about/"

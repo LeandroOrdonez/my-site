@@ -1,24 +1,272 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Leandro Ordóñez Ante</title>
-    <link>https://leandro.ordonez.tech/es-co/</link>
-    <description>Recent content on Leandro Ordóñez Ante</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <lastBuildDate>Fri, 11 Oct 2019 14:30:34 +0200</lastBuildDate>
-    
-	<atom:link href="https://leandro.ordonez.tech/es-co/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>Sobre mi</title>
-      <link>https://leandro.ordonez.tech/es-co/about/</link>
-      <pubDate>Fri, 11 Oct 2019 14:30:34 +0200</pubDate>
-      
-      <guid>https://leandro.ordonez.tech/es-co/about/</guid>
-      <description>Soy un ingeniero colombiano y estudiante de doctorado en Ciencias de la Computación dentro del grupo de investigación IDLab - UGent en Bélgica. Mi trabajo de investigación tiene que ver con optimizar el acceso a grandes colecciones de datos almacenados en sistemas heterogeneos y distribuidos. También soy el fundador de BitBang Company una empresa dedicada a acercar las ventajas y beneficios del analisis de datos a gran escala a compañías de todos los tamaños.</description>
-    </item>
-    
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Leandro Ordóñez Ante</title><link>https://leandro.ordonez.tech/es-co/</link><description>Recent content on Leandro Ordóñez Ante</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sun, 05 Apr 2020 14:10:33 +0100</lastBuildDate><atom:link href="https://leandro.ordonez.tech/es-co/index.xml" rel="self" type="application/rss+xml"/><item><title>Enabling interactive querying for latency-sensitive applications on big datasets</title><link>https://leandro.ordonez.tech/es-co/phd/</link><pubDate>Thu, 10 Mar 2022 15:20:01 +0100</pubDate><guid>https://leandro.ordonez.tech/es-co/phd/</guid><description>&lt;p>Doctoral dissertation submitted to obtain the academic degree of Doctor of Computer Science Engineering from &lt;a href="https://www.ugent.be/">Ghent University&lt;/a>.&lt;/p>
+&lt;p>&lt;em>Download a digital copy &lt;a href="https://cloud.ilabt.imec.be/index.php/s/83jpXHMdsQ4Cem9">here (PDF)&lt;/a>&lt;/em>&lt;/p>
+&lt;h2 id="thesis-summary">Thesis summary&lt;/h2>
+&lt;hr>
+&lt;p>The rapid commoditization of data storage, computing power, and network capacity over the last decades has led to an explosive growth of the volume of data available, setting a trend that is expected to accelerate in the coming years. According to a recent forecast by the International Data Corporation (IDC), the amount of data generated worldwide only in 2021 is set to reach 79 zettabytes (i.e., 79 $\times$10$^{21}$ bytes). Furthermore, this metric will compound over the next five years, placing the volume of data created globally at 181 zettabytes by 2025. In the modern hyperconnected world, virtually every interaction we have with our surroundings leaves behind a digital footprint. Organizations in all sectors are increasingly turning to Internet of Things (IoT) technologies to monitor their operations and collect data concerning their business activity. As the volume, variety, and complexity of data grow larger, so does the difficulty for processing, analyzing, and distilling insights from it. Such &lt;em>big data&lt;/em> sets have long outgrown the capabilities offered by traditional data management technologies, and have brought to the forefront the need for alternative mechanisms for persisting and accessing data in a reliable, scalable and performant manner. Research and innovation in big data management have led to the development of a vast variety of solutions each one catering to certain particular use cases. These big data technologies range from NoSQL databases able to accommodate data encoded in a diversity of data models (e.g., document-based, key-value data, graph, and columnar-based), to distributed systems capable of harnessing the resources of a cluster of commodity machines to store and run data-intensive workloads.&lt;/p>
+&lt;p>For modern organizations, being able to access data and derive insights from it as soon as it is generated has become of utmost importance to support opportune decision-making. The need to minimize this &lt;em>data-to-insight&lt;/em> time has led to an increasing interest in &lt;em>event-based architectures&lt;/em> and &lt;em>near real-time stream processing frameworks&lt;/em>. However, in spite of their growing popularity, these kinds of solutions remain largely untapped by businesses. Most of the data processing conducted nowadays still predominantly relies on batch processing methods which are known to be subject to high latency. In such circumstances, organizations face the risk of making decisions and taking action on stale data, especially for latency-sensitive applications running on these large, high-dimensional data collections. This dissertation sets off to advance in the understanding of the problem of enabling interactive low-latency querying on large multidimensional data sets. In relation to this problem, four major challenges are addressed throughout the dissertation:&lt;/p>
+&lt;ol>
+&lt;li>Dimensional modeling is a staple technique for structuring historical business data, which resorts to denormalized schemas to enable fast processing of analytical queries. However, once defined, these schemas offer little flexibility to adapt to changes in the workload and to optimize for time-consuming queries. This dissertation explores mechanisms for feeding information about the actual use of the data back to the analytical system to speed up query execution.&lt;/li>
+&lt;li>Performing exploratory analysis over live and historical multidimensional data is particularly demanding for data processing systems due to the ever-growing volume of data and the complexity of the queries required to fulfill the exploration goals. A large part of the contributions presented in this thesis are aimed at identifying common data access patterns behind typical exploratory actions, and at devising data processing mechanisms enabling interactive response times for queries associated with said patterns.&lt;/li>
+&lt;li>Traditionally, most of the heavy lifting of query processing is conducted in backend or server-side components. When it comes to time-sensitive applications serving multiple clients, computational costs linked to each individual query can quickly add up thus hampering service scalability. A more balanced trade-off between server-side and client-side processing is studied in this dissertation, to favor system scalability while still delivering interactive query computation.&lt;/li>
+&lt;li>Data retrieval patterns often reflect information needs or user preferences. These patterns are particularly dynamic and volatile when applications deal with multiple simultaneous clients. In these circumstances, any data structures created to speed up certain specific queries are quickly rendered obsolete. Proactive mechanisms to adjust to changes in these retrieval patterns and anticipate client requests are required to ensure low-latency querying in time-critical applications.&lt;/li>
+&lt;/ol></description></item><item><title>Interactive querying for spatiotemporal data with Kafka Streams</title><link>https://leandro.ordonez.tech/es-co/ideas/interactive-querying-kafka-streams/</link><pubDate>Sun, 05 Apr 2020 14:10:33 +0100</pubDate><guid>https://leandro.ordonez.tech/es-co/ideas/interactive-querying-kafka-streams/</guid><description>&lt;figure class="center">&lt;img src="https://imgs.xkcd.com/comics/data_pipeline.png"
+alt="Data Pipeline by xkcd.com"/>&lt;figcaption>
+&lt;p>Data Pipeline by &lt;a href="https://xkcd.com/2054/">xkcd.com&lt;/a>&lt;/p>
+&lt;/figcaption>
+&lt;/figure>
+&lt;p>In a &lt;a href="https://leandro.ordonez.tech/ideas/continuous-aggregation-kafka-streams/">previous post&lt;/a> we explored a method for performing continuous aggregation on a stream of sensor readings using the Kafka Streams DSL. This time I want to share with you &lt;a href="https://github.com/LeandroOrdonez/kafka-streams-pipeline">&lt;code>kafka-streams-pipeline&lt;/code>&lt;/a>, a Kafka Streams application that leverages said continuous aggregation method and defines a complete stream processing pipeline, which enables querying the continuous data summaries stored into a materialized &lt;code>KTable&lt;/code>, by incorporating the spatial and temporal dimensions of the sensor data to the analysis. To understand how this application works, let’s first get back to the &lt;code>temperature-readings&lt;/code> topic from the previous post. In this topic the feed of temperature measurements made by multiple sensors is being posted. The following is an excerpt of the measurements registered in &lt;code>temperature-readings&lt;/code>:&lt;/p>
+&lt;script type="application/javascript" src="https://gist.github.com/LeandroOrdonez/04eb02301d15f9af942cf76faa9e99c3.js?file=temperature_readings.json">&lt;/script>
+&lt;p>Each JSON object from the list above represents a temperature reading taken by a given sensor. Notice the &lt;code>timestamp&lt;/code> and &lt;code>geohash&lt;/code> fields, which hold the information about the time and the location of each measurement. In case you are not familiar with the concept of geohashing, it is basically an encoding mechanism created by Gustavo Niemeyer in 2008, that allows reducing a two-dimensional longitude, latitude pair into a single alphanumeric string (in base32 format), where each subsequent character adds precision to the location. So, for instance, the geohash &lt;code>u155mz82dv33&lt;/code> corresponds to the longitude, latitude pair &lt;code>(4.47189873, 51.23760204)&lt;/code>. The idea is to enable interactive (low-latency) queries that support typical visual exploratory analysis tasks on top of the spatiotemporal data being posted to &lt;code>temperature-readings&lt;/code>, by leveraging some appealing features of geohashes such as its inherent hierarchical structure, which recursively subdivides geospatial areas into 32 cells or tiles at each level (character)&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>, as you can see in the diagram below.&lt;/p>
+&lt;figure class="img60">&lt;img src="https://leandro.ordonez.tech/images/ideas/geohash.jpg"
+alt="Geohashes by Movable Type Scripts"/>&lt;figcaption>
+&lt;p>Geohashes by &lt;a href="https://www.movable-type.co.uk/scripts/geohash.html">Movable Type Scripts&lt;/a>&lt;/p>
+&lt;/figcaption>
+&lt;/figure>
+&lt;p>This way, by truncating the &lt;code>geohash&lt;/code> of each of the incoming readings to a certain number characters, we can set up a grid for partitioning the temperature data in the spatial dimension, and perform continuous aggregation on each of the resulting partitions. The same principle can be applied in the temporal dimension by truncating the &lt;code>timestamp&lt;/code> of each reading to a certain unit of time, laying out a temporal partitioning schema that arranges data into time bins of a fixed width (for instance, &lt;em>minutely&lt;/em>, &lt;em>hourly&lt;/em>, or &lt;em>daily&lt;/em> bins).&lt;/p>
+&lt;p>The application focuses on serving two types of queries: (&lt;em>1&lt;/em>) &lt;strong>Historical queries&lt;/strong>, namely those asking how the temperature has evolved along a given geospatial region, over a certain period of time; and (&lt;em>2&lt;/em>) &lt;strong>Snapshot queries&lt;/strong> which provide a time-slice view of the temperature for a specific moment in time.&lt;/p>
+&lt;figure class="center">&lt;img src="https://leandro.ordonez.tech/images/ideas/historical-snapshot-queries.jpg"
+alt="Historical and Snapshot queries"/>&lt;figcaption>
+&lt;p>Historical and Snapshot queries&lt;/p>
+&lt;/figcaption>
+&lt;/figure>
+&lt;p>Below you can see a schematics showing the structure of the stream processing pipeline at the core of the application discussed in this post.&lt;/p>
+&lt;figure class="img60">&lt;img src="https://leandro.ordonez.tech/images/ideas/architecture-kstreams-querying.jpg"
+alt="Stream processing pipeline for interactive querying with Kafka Streams"/>&lt;figcaption>
+&lt;p>Stream processing pipeline for interactive querying with Kafka Streams&lt;/p>
+&lt;/figcaption>
+&lt;/figure>
+&lt;p>As you can see in the diagram above, it is possible to deploy multiple stream processors, each one hosting an instance of the state store where one fraction of the global application state is persisted. In consequence, in this distributed setup queries are computed by combining the result sets obtained from each processor:&lt;/p>
+&lt;figure class="center">&lt;img src="https://leandro.ordonez.tech/images/ideas/dist-query-processing.jpg"
+alt="Distributed query resolution"/>&lt;figcaption>
+&lt;p>Distributed query resolution&lt;/p>
+&lt;/figcaption>
+&lt;/figure>
+&lt;p>The source code of this application is available on &lt;a href="https://github.com/LeandroOrdonez/kafka-streams-pipeline">github&lt;/a>. You can deploy the entire pipeline (including an application for generating syntethic temperature values, discussed in a &lt;a href="https://leandro.ordonez.tech/ideas/mocking-sensor-data-generator/">recent post&lt;/a>) on your local machine using Docker. Just clone the repository and follow the instructions on the &lt;code>README.md&lt;/code> file. Hope you find it useful! :)&lt;/p>
+&lt;section class="footnotes" role="doc-endnotes">
+&lt;hr>
+&lt;ol>
+&lt;li id="fn:1" role="doc-endnote">
+&lt;p>&lt;a href="https://www.movable-type.co.uk/scripts/geohash.html">Here&lt;/a> you can find a more detailed explanation on geohashes.&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;/section></description></item><item><title>Mocking sensor data generator</title><link>https://leandro.ordonez.tech/es-co/ideas/mocking-sensor-data-generator/</link><pubDate>Wed, 01 Apr 2020 11:44:42 +0200</pubDate><guid>https://leandro.ordonez.tech/es-co/ideas/mocking-sensor-data-generator/</guid><description>&lt;figure>&lt;img src="https://leandro.ordonez.tech/images/ideas/map0-min.jpg"
+alt="Photo by Thor Alvis on Unsplash"/>&lt;figcaption>
+&lt;p>Photo by &lt;a href="https://unsplash.com/@terminath0r">Thor Alvis&lt;/a> on &lt;a href="https://unsplash.com/photos/dWwZBcjw3GE">Unsplash&lt;/a>&lt;/p>
+&lt;/figcaption>
+&lt;/figure>
+&lt;p>In case you are ever in need of some toy data to get you started with a data project, or just to test your ideas or implementations, I think you might find the Docker setup in &lt;a href="https://github.com/LeandroOrdonez/temp-readings-gen/">this repo&lt;/a> useful. It allows generating synthetic sensor readings of geolocated temperature data, and posting each record to a Kafka topic. The readings generated follow the format specified in the sample records below:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-fallback" data-lang="fallback">&lt;span style="display:flex;">&lt;span>{&amp;#34;timestamp&amp;#34;: 1585054952527, &amp;#34;geohash&amp;#34;: &amp;#34;u155mz82dv33&amp;#34;, &amp;#34;sensorId&amp;#34;:&amp;#34;s000001&amp;#34;, &amp;#34;tempVal&amp;#34;: 20.3, &amp;#34;tempUnit&amp;#34;: &amp;#34;c&amp;#34;}
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>{&amp;#34;timestamp&amp;#34;: 1585080280353, &amp;#34;geohash&amp;#34;: &amp;#34;u155krxynu5s&amp;#34;, &amp;#34;sensorId&amp;#34;:&amp;#34;s000002&amp;#34;, &amp;#34;tempVal&amp;#34;: 19.7, &amp;#34;tempUnit&amp;#34;: &amp;#34;c&amp;#34;}
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>{&amp;#34;timestamp&amp;#34;: 1585080335267, &amp;#34;geohash&amp;#34;: &amp;#34;u155mz827m6q&amp;#34;, &amp;#34;sensorId&amp;#34;:&amp;#34;s000010&amp;#34;, &amp;#34;tempVal&amp;#34;: 24.6, &amp;#34;tempUnit&amp;#34;: &amp;#34;c&amp;#34;}
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>{&amp;#34;timestamp&amp;#34;: 1585080366564, &amp;#34;geohash&amp;#34;: &amp;#34;u155krxynuhu&amp;#34;, &amp;#34;sensorId&amp;#34;:&amp;#34;s000007&amp;#34;, &amp;#34;tempVal&amp;#34;: 17.2, &amp;#34;tempUnit&amp;#34;: &amp;#34;c&amp;#34;}
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>{&amp;#34;timestamp&amp;#34;: 1585080388268, &amp;#34;geohash&amp;#34;: &amp;#34;u155mz827v2n&amp;#34;, &amp;#34;sensorId&amp;#34;:&amp;#34;s000004&amp;#34;, &amp;#34;tempVal&amp;#34;: 22.2, &amp;#34;tempUnit&amp;#34;: &amp;#34;c&amp;#34;}
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="usage">Usage&lt;/h2>
+&lt;p>At least one running instance of Kafka and Zookeeper are required for the generator script to run. Optionally, we provide a &lt;code>docker-compose&lt;/code> file for deploying a testing Kafka environment in your local machine (based on the &lt;code>wurstmeister&lt;/code>&amp;rsquo;s &lt;a href="https://github.com/wurstmeister/kafka-docker/blob/master/docker-compose-single-broker.yml">kafka-docker&lt;/a> deployment). To use it, run:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-fallback" data-lang="fallback">&lt;span style="display:flex;">&lt;span>docker-compose -f docker-compose-kafka.yml up -d
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Once this environment is up, you can spawn the Docker container where the generator script is going to run, and optionally specify some environment variables, such as the bounding box (&lt;code>BBOX&lt;/code>) within which the temperature readings are going to be located (as a comma-separated sequence of coordinates: &lt;code>&amp;lt;north&amp;gt;,&amp;lt;west&amp;gt;,&amp;lt;south&amp;gt;,&amp;lt;east&amp;gt;&lt;/code>), as well as a reference temperature value (&lt;code>AVG_TEMP&lt;/code>) the generated readings are going to oscillate around (in Celsius degrees):&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-fallback" data-lang="fallback">&lt;span style="display:flex;">&lt;span>docker run -it \
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> --network=&amp;#34;host&amp;#34; \
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> -e KAFKA_BROKER=&amp;#34;localhost:9092&amp;#34; \
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> -e BBOX=&amp;#34;51.32288838086245,4.091720581054688,51.1509246836981,4.752960205078125&amp;#34; \
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> -e AVG_TEMP=19.0 \
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> -e KAFKA_TOPIC=&amp;#34;temperature-readings&amp;#34; \
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> -e RND_SEED=&amp;#34;0.0&amp;#34; \
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> temp-readings-gen
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>In case you already have a running Kafka setup, omit the &lt;code>--network=&amp;quot;host&amp;quot;&lt;/code> argument, and set the correspondent url (or urls) to the &lt;code>KAFKA_BROKER&lt;/code> environment variable.&lt;/p>
+&lt;p>Now you should be able to consume the readings being posted to the &lt;code>temperature-readings&lt;/code> topic. You can test this by accessing the Kafka Docker container (or by &lt;code>ssh&lt;/code> into the broker of your existing Kafka setup) and running the following command:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="background-color:#fff;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-fallback" data-lang="fallback">&lt;span style="display:flex;">&lt;span>kafka-console-consumer.sh \
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> --bootstrap-server localhost:9092 \
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> --topic temperature-readings \
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> --from-beginning \
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> --formatter kafka.tools.DefaultMessageFormatter \
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> --property print.value=true \
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> --property key.deserializer=org.apache.kafka.common.serialization.StringDeserializer \
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> --property value.deserializer=org.apache.kafka.common.serialization.StringDeserializer
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Below you can see the time-series chart of the typical values generated throughout one day:&lt;/p>
+&lt;figure class="center">&lt;img src="https://leandro.ordonez.tech/images/ideas/daily-temp-fluctuation.png"
+alt="Time-series chart of the generated temperature values"/>&lt;figcaption>
+&lt;p>Time-series chart of the generated temperature values&lt;/p>
+&lt;/figcaption>
+&lt;/figure>
+&lt;p>And there you go, a running network of mobile sensors generating mock temperature data and pushing it into a Kafka topic. You can use this Docker setup to try, for instance, the Kafka streams application we discussed in &lt;a href="https://leandro.ordonez.tech/ideas/interactive-querying-kafka-streams/">this post&lt;/a>, allowing the continuous aggregation of a stream of sensor data.&lt;/p></description></item><item><title>Common procedures and troubleshooting</title><link>https://leandro.ordonez.tech/es-co/ideas/common-procedures-and-troubleshooting/</link><pubDate>Mon, 11 Nov 2019 20:29:41 +0100</pubDate><guid>https://leandro.ordonez.tech/es-co/ideas/common-procedures-and-troubleshooting/</guid><description>&lt;figure>&lt;img src="https://leandro.ordonez.tech/images/ideas/yak-shaving-min.jpg"
+alt="Photo by Lieve Ransijn on Unsplash"/>&lt;figcaption>
+&lt;p>Photo by &lt;a href="https://unsplash.com/@lievemax">Lieve Ransijn&lt;/a> on &lt;a href="https://unsplash.com/photos/FsJ_vzp_NI4">Unsplash&lt;/a>&lt;/p>
+&lt;/figcaption>
+&lt;/figure>
+&lt;p>This is a &amp;ldquo;&lt;em>curated&lt;/em>&amp;rdquo; list of pointers I have found handy during my long coding sessions (a major part of which I still spend &lt;a href="https://www.techopedia.com/definition/15511/yak-shaving">yak shaving&lt;/a> someone else&amp;rsquo;s code).&lt;/p>
+&lt;h3 id="angular-related">Angular related:&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="https://medium.com/engineering-on-the-incline/reloading-current-route-on-click-angular-5-1a1bfc740ab2">Reloading current route in Angular 5 / Angular 6 (reload component when clicking browser&amp;rsquo;s back button)&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://stackblitz.com/edit/angular-material2-table?file=app%2Fapp.component.ts">Angular material datatable example (sortable, selectable and filterable)&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://stackblitz.com/edit/angular-tyfg2z?file=app%2Fapp.component.ts">Angular material checkbox + forms example&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://jeffshamley.com/blogs/how-block-robots-crawling-your-angular-application">How to prevent robots from crawling an Angular application&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.npmjs.com/package/ng-number-picker">&lt;code>ng-number-picker&lt;/code>&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h3 id="python-dev-and-data-analysis">Python Dev and Data analysis:&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="https://stackoverflow.com/questions/16183462/saving-images-in-python-at-a-very-high-quality">&lt;code>Matplotlib&lt;/code>: Save images in high quality (EPS, PDF)&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://stackoverflow.com/questions/21288062/second-y-axis-label-getting-cut-off/21288063">&lt;code>Matplotlib&lt;/code>: Prevent plot labels from getting cut off when saving them&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://stackoverflow.com/a/4701285/2412831">&lt;code>Matplotlib&lt;/code>: How to put the legend out of the plot&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://stackoverflow.com/q/34576059/2412831">&lt;code>Matplotlib&lt;/code>: Reverse the order of legend&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://pydatascience.org/2017/12/05/read-the-data-and-plotting-with-multiple-markers/">&lt;code>Matplotlib&lt;/code>: Read the data and plotting with multiple markers&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://medium.com/@1522933668924/using-matplotlib-in-jupyter-notebooks-comparing-methods-and-some-tips-python-c38e85b40ba1">&lt;code>Matplotlib&lt;/code>: Using matplotlib in jupyter notebooks — comparing methods and some tips (&lt;code>%matplotlib &amp;lt;&amp;gt;&lt;/code>)&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://stackoverflow.com/questions/18425386/re-findall-not-returning-full-match">&lt;code>python re&lt;/code>: Non-capturing groups&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://stackoverflow.com/a/50396798/2412831">&lt;code>pip 10 and apt&lt;/code>: How to avoid “Cannot uninstall X” errors for distutils packages
+&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://stackoverflow.com/a/28187426/2412831">&lt;code>scipy &amp;amp; scikit-learn&lt;/code>: How to calculate Silhouette Score of the scipy&amp;rsquo;s fcluster using scikit-learn silhouette score?&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://stackoverflow.com/a/29334672/2412831">&lt;code>pandas&lt;/code>: How to read a large csv file in chunks&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.kaggle.com/gvyshnya/parallel-operations-over-a-pandas-df">&lt;code>pandas&lt;/code>: Parallel operations over a pandas DataFrame&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://stackoverflow.com/a/22477520/2412831">&lt;code>pandas&lt;/code>: Random selection per group&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://deparkes.co.uk/2016/06/10/folium-map-tiles/">&lt;code>folium&lt;/code>: Map Tiles&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://nbviewer.jupyter.org/github/python-visualization/folium/tree/master/examples/">&lt;code>folium&lt;/code>: Gallery of examples&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://nbviewer.jupyter.org/github/python-visualization/folium/blob/master/examples/MarkerCluster.ipynb">&lt;code>folium&lt;/code>: Marker cluster&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://stackoverflow.com/q/38899190/2412831">&lt;code>GeoPandas&lt;/code>: Label Polygons (see second answer)&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://medium.com/@achm.firmansyah/an-approach-for-checking-overlaps-and-gaps-in-polygons-using-geopandas-ebd6606e7f70">&lt;code>GeoPandas&lt;/code>: An Approach for Checking Overlaps and Gaps in Polygons using Geopandas&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://geoffboeing.com/2016/10/r-tree-spatial-index-python/">&lt;code>GeoPandas&lt;/code>: R-tree Spatial Indexing with Python (bounding box matches vs exact polygon matches)&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://automating-gis-processes.github.io/2017/lessons/L3/nearest-neighbour.html">&lt;code>GeoPandas&lt;/code>: Nearest Neighbour Analysis (Nearest polygon to point)&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/jupyter-widgets/ipyleaflet/issues/290">&lt;code>ipyleaflet&lt;/code>: Get coordinates out of map drawings&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://stackoverflow.com/a/40941511/2412831">&lt;code>Jupyter&lt;/code> How to check the source code of a module&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://stackoverflow.com/q/20803878/2412831">&lt;code>Geoalchemy2&lt;/code>: query all users within X meteres&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.io.json.json_normalize.html">&lt;code>pandas&lt;/code>: Normalize semi-structured JSON data into a flat table&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://stackoverflow.com/a/22002048/2412831">Streaming data from Postgres into Python&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://blog.tafkas.net/2018/09/28/creating-a-grid-based-on-geohashes/">Creating a grid based on GeoHashes&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/wannesm/dtaidistance">Time series distances: Dynamic Time Warping (DTW) &lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://medium.com/@smirnov.am/running-flask-in-production-with-docker-1932c88f14d0">Running &lt;code>Flask&lt;/code> in production with Docker&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://scotch.io/tutorials/build-a-restful-api-with-flask-the-tdd-way">Build a RESTful API with Flask – The TDD Way&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h3 id="docker--kubernetes-related">Docker &amp;amp; Kubernetes related:&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="https://www.digitalocean.com/community/tutorials/how-to-build-a-node-js-application-with-docker">How To Build a Node.js Application with Docker&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://stackoverflow.com/a/35689633/2412831">Starting a shell in the Docker Alpine container&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.digitalocean.com/community/tutorials/how-to-share-data-between-docker-containers#step-1-%E2%80%94-creating-an-independent-volume">How To Share Data between Docker Containers&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.andrewmahon.info/blog/docker-compose-data-science/">Docker Compose for Data Science (Jupyter + PostgreSQL)&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/kubernetes/kubernetes/issues/41536#issuecomment-280354231">&lt;code>kubectl&lt;/code>: Pull docker image from private repository&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://linuxhint.com/run_postgresql_docker_compose/">Running &lt;code>PostgreSQL&lt;/code> using Docker Compose (with persistent volume)&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://stackoverflow.com/a/30064175/2412831">Using &lt;code>docker-compose&lt;/code>, how to execute multiple commands&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://angristan.xyz/build-push-docker-images-gitlab-ci/">Automatically build and push Docker images using GitLab CI&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://kubernetes.io/docs/tasks/configure-pod-container/pull-image-private-registry/">&lt;code>k8s&lt;/code>: Pull an Image from a Private Registry&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://kubernetes.io/docs/tasks/configure-pod-container/configure-persistent-volume-storage/">&lt;code>k8s&lt;/code>: Configure persistent volume storage&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://jaas.ai/kubernetes-core/bundle/815">&lt;code>K8s&lt;/code>, &lt;code>juju&lt;/code>: Kubernetes Core bundle&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/charmed-kubernetes/bundle/issues/357#issuecomment-316542831">&lt;code>K8S&lt;/code>, &lt;code>juju&lt;/code>: Restart K8s related services manually (for the juju bundle)&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://medium.com/@clouddev.guru/how-to-fix-kubernetes-namespace-deleting-stuck-in-terminating-state-5ed75792647e">&lt;code>K8S&lt;/code>: How to fix — Kubernetes &lt;code>namespace&lt;/code> deleting stuck in Terminating state&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://medium.com/better-programming/build-push-to-docker-with-maven-eea7c4b8cfa2">Build and Push to Docker With Maven&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h3 id="git-related">Git related&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="https://stackoverflow.com/a/16162000/2412831">Remove submodule&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h3 id="hadoop-related">Hadoop related:&lt;/h3>
+&lt;h4 id="decommisioning-hadoop-datanodes">Decommisioning Hadoop datanodes:&lt;/h4>
+&lt;ul>
+&lt;li>&lt;a href="https://www.ibm.com/support/knowledgecenter/en/SSPT3X_4.1.0/com.ibm.swg.im.infosphere.biginsights.admin.doc/doc/iop_decom_nodes.html">Decommissioning slave nodes - IBM Knowledge Center&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://www.cloudera.com/documentation/enterprise/5-9-x/topics/cdh_ig_decommision_datanodes.html">Decommissioning DataNodes Using the Command Line - Cloudera&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h4 id="fix-connection-issues-between-the-namenode-and-datanodes">Fix connection issues between the namenode and datanodes:&lt;/h4>
+&lt;ul>
+&lt;li>&lt;a href="https://wiki.apache.org/hadoop/ConnectionRefused">&lt;code>Connection Refused&lt;/code>&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h3 id="java-related">Java related:&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="https://stackoverflow.com/a/41347321/2412831">&lt;code>maven&lt;/code> Accessing resource files inside a jar: Java properties file in jar not found when running jar&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://medium.com/@aruny/embedding-jetty-server-with-jersey-as-restful-container-with-cors-a3ea3c5381c9">&lt;code>Jetty&lt;/code>, &lt;code>REST&lt;/code>, &lt;code>CORS&lt;/code>: Embedding Jetty Server with Jersey as RESTful container with CORS&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h3 id="kafka-related">KafKa related:&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="https://cwiki.apache.org/confluence/display/KAFKA/Kafka+Stream+Usage+Patterns">&lt;code>Kafka Streams&lt;/code>: How to compute an (windowed) average?&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://kafka.apache.org/23/documentation/streams/tutorial">&lt;code>Kafka Streams&lt;/code>: Write a Kafka Streams Application&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://github.com/bryanyang0528/ksql-python">&lt;code>KSQL&lt;/code>: &lt;code>ksql-python&lt;/code> A python wrapper for the KSQL REST API&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h3 id="latex-related">LaTeX related:&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="https://tex.stackexchange.com/a/9068">Large braces for specifying values of variables by condition&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h3 id="postgresql-related">PostgreSQL related:&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="https://www.citusdata.com/blog/2018/03/06/postgres-planner-and-its-usage-of-statistics/">&lt;code>CREATE STATISTICS&lt;/code>: The Postgres 10 feature you didn&amp;rsquo;t know about&lt;/a>&lt;/li>
+&lt;li>&lt;a href="http://tatiyants.com/pev/">PostgreSQL &lt;code>Explain&lt;/code> Visualizer&lt;/a>&lt;/li>
+&lt;li>&lt;a href="http://www.interdb.jp/pg/pgsql03.html">The Internals of PostgreSQL: Ch. 3 Query Processing (See subsection 3.2.2.2 on &lt;code>run cost&lt;/code> and &lt;code>selectivity&lt;/code>)&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://stackoverflow.com/a/42118080/2412831">Using &lt;code>date_trunc&lt;/code> to group by hour with a timestamp field?&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://stackoverflow.com/questions/12343984/insert-trigger-to-update-another-table-using-postgresql">Insert trigger to Update another table using PostgreSQL&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h3 id="spark-related">Spark related:&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="https://community.hortonworks.com/questions/144181/num-executors-and-executor-memory-in-spark.html">On why large executor memory does not imply better performance&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://community.hortonworks.com/questions/144181/num-executors-and-executor-memory-in-spark.html">On the &lt;code>spark.sql.autoBroadcastJoinThreshold&lt;/code> setting - SparkSQL&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://sujithjay.com/spark-sql/2018/06/28/Shuffle-Hash-and-Sort-Merge-Joins-in-Apache-Spark/">Shuffle Hash and Sort Merge Joins in Apache Spark&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://sujithjay.com/spark-sql/2018/02/17/Broadcast-Hash-Joins-in-Apache-Spark/">Broadcast Hash Joins in Apache Spark&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://sujithjay.com/2018/07/24/Understanding-Apache-Spark-on-YARN/">Understanding Apache Spark on YARN&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://stackoverflow.com/a/41027619/2412831">Pyspark: Split multiple array columns into rows (&lt;code>explode&lt;/code> method)&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://stackoverflow.com/a/38189294/2412831">Convert comma separated string to array in pyspark dataframe&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;h3 id="ubuntu-related">Ubuntu related:&lt;/h3>
+&lt;ul>
+&lt;li>&lt;a href="https://www.digitalocean.com/community/tutorials/how-to-add-swap-space-on-ubuntu-18-04">How To Add Swap Space on Ubuntu 18.04&lt;/a>&lt;/li>
+&lt;li>&lt;a href="https://help.ubuntu.com/community/Mount/USB">Disable automount&lt;/a>&lt;/li>
+&lt;/ul></description></item><item><title>Publicaciones</title><link>https://leandro.ordonez.tech/es-co/publications/</link><pubDate>Sun, 10 Nov 2019 14:04:05 +0100</pubDate><guid>https://leandro.ordonez.tech/es-co/publications/</guid><description>&lt;p>Artículos que he publicado (como autor principal o como co-autor):&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;em>&lt;a href="https://scholar.google.be/citations?user=kxSgexYAAAAJ&amp;amp;hl=en">Ordonez Ante, L.&lt;/a>&lt;/em>, Van Seghbroeck, G., Wauters, T., Volckaert, B., &amp;amp; De Turck, F. (2020) &lt;a href="https://www.mdpi.com/1424-8220/20/9/2737">&lt;strong>EXPLORA: Interactive Querying of Multidimensional Data in the Context of Smart Cities&lt;/strong>&lt;/a>. Sensors 2020, 20, 2737.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;em>&lt;a href="https://scholar.google.be/citations?user=kxSgexYAAAAJ&amp;amp;hl=en">Ordonez Ante, L.&lt;/a>&lt;/em>, Van Seghbroeck, G., Wauters, T., Volckaert, B., &amp;amp; De Turck, F. (2020) &lt;a href="https://rdcu.be/b2YnJ">&lt;strong>A Workload-Driven Approach for View Selection in Large Dimensional Datasets&lt;/strong>&lt;/a>. Journal of Network and Systems Management (2020). &lt;a href="https://doi.org/10.1007/s10922-020-09526-z">https://doi.org/10.1007/s10922-020-09526-z&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;em>&lt;a href="https://scholar.google.be/citations?user=kxSgexYAAAAJ&amp;amp;hl=en">Ordonez Ante, L.&lt;/a>&lt;/em>, Van Seghbroeck, G., Wauters, T., Volckaert, B., &amp;amp; De Turck, F. (2019). &lt;a href="https://www.scitepress.org/PublicationsDetail.aspx?ID=WSrr2zJdAbw%3d&amp;amp;t=1">&lt;strong>Automatic view selection for distributed dimensional data&lt;/strong>&lt;/a>. In IoTBDS2019, the 4th International Conference on Internet of Things, Big Data and Security (pp. 17-28).&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;em>&lt;a href="https://scholar.google.be/citations?user=kxSgexYAAAAJ&amp;amp;hl=en">Ordonez Ante, L.&lt;/a>&lt;/em>, Vanhove, T., Van Seghbroeck, G., Wauters, T., Volckaert, B., &amp;amp; De Turck, F. (2017, December). &lt;a href="https://ieeexplore.ieee.org/abstract/document/8258206">&lt;strong>Dynamic data transformation for low latency querying in big data systems&lt;/strong>&lt;/a>. In 2017 IEEE International Conference on Big Data (Big Data) (pp. 2480-2489). IEEE.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;em>&lt;a href="https://scholar.google.be/citations?user=kxSgexYAAAAJ&amp;amp;hl=en">Ordonez Ante, L.&lt;/a>&lt;/em>, Vanhove, T., Van Seghbroeck, G., Wauters, T., &amp;amp; De Turck, F. (2016, December). &lt;a href="https://ieeexplore.ieee.org/abstract/document/7856676">&lt;strong>Interactive querying and data visualization for abuse detection in social network sites&lt;/strong>&lt;/a>. In 2016 11th International Conference for Internet Technology and Secured Transactions (ICITST) (pp. 104-109). IEEE.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;em>&lt;a href="https://scholar.google.be/citations?user=kxSgexYAAAAJ&amp;amp;hl=en">Ordonez Ante, L.&lt;/a>&lt;/em>, Verborgh, R., &amp;amp; Corrales, J. C. (2014). &lt;a href="http://www.scielo.org.co/scielo.php?script=sci_arttext&amp;amp;pid=S1692-33242014000100011">&lt;strong>A topic modeling approach for web service annotation&lt;/strong>&lt;/a>. Revista Ingenierías Universidad de Medellín, 13(24), 147-164.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Rojas, J., &lt;em>&lt;a href="https://scholar.google.be/citations?user=kxSgexYAAAAJ&amp;amp;hl=en">Ordonez Ante, L.&lt;/a>&lt;/em>, &amp;amp; Carlos, J. (2014). &lt;a href="http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.680.4040">&lt;strong>Web and Telco Service Integration: A Dynamic and Adaptable Approach&lt;/strong>&lt;/a>. Int. J. Adv. Comput. Sci. Appl, 5(5).&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>De La Cruz-Caicedo, Ángela, Bolaños-Bastidas, Yonatan, &lt;a href="https://scholar.google.be/citations?user=kxSgexYAAAAJ&amp;amp;hl=en">&lt;em>Ordonez Ante, Leandro&lt;/em>&lt;/a>, &amp;amp; Corrales, Juan Carlos. (2014). &lt;a href="http://www.scielo.org.co/scielo.php?script=sci_arttext&amp;amp;pid=S0123-21262014000200009">&lt;strong>Semantic Annotation of SOAP Web Services based on Word Sense Disambiguation Techniques&lt;/strong>&lt;/a>. Ingeniería y Universidad, 18(2), 369-392.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>Rojas-Potosi, L. A., Suarez-Meza, L. J., &lt;em>&lt;a href="https://scholar.google.be/citations?user=kxSgexYAAAAJ&amp;amp;hl=en">Ordonez Ante, L.&lt;/a>&lt;/em>, &amp;amp; Corrales, J. C. (2012, March). &lt;a href="https://www.aaai.org/ocs/index.php/SSS/SSS12/paper/viewPaper/4348">&lt;strong>Web Resources Recommendation based on Dynamic Prediction of User Consumption on the Social Web&lt;/strong>&lt;/a>. In 2012 AAAI Spring Symposium Series.&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;em>&lt;a href="https://scholar.google.be/citations?user=kxSgexYAAAAJ&amp;amp;hl=en">Ordonez Ante, L.&lt;/a>&lt;/em>, Rojas-Potosi, L. A., Suarez-Meza, L. J., &amp;amp; Corrales, J. C. (2012). &lt;a href="https://www.semanticscholar.org/paper/Towards-the-Automation-of-the-Semantic-Annotation-Ordo%C3%B1ez-Ante-Rojas-Potos%C3%AD/ad7d959d49bc506146b3546194754b5513421862">&lt;strong>Towards the automation of the semantic annotation process for Web services&lt;/strong>&lt;/a>. In Proceedings of the International Conference on Semantic Web and Web Services (SWWS) (p. 1). The Steering Committee of The World Congress in Computer Science, Computer Engineering and Applied Computing (WorldComp).&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;em>&lt;a href="https://scholar.google.be/citations?user=kxSgexYAAAAJ&amp;amp;hl=en">Ordonez Ante, L.&lt;/a>&lt;/em>, Bastidas Narváez, A. X., &amp;amp; Corrales, J. C. (2012). &lt;a href="http://www.scielo.org.co/scielo.php?pid=S1794-91652012000100004&amp;amp;script=sci_arttext&amp;amp;tlng=pt">&lt;strong>Semantic similarity estimation of tasks between telecommunications business processes&lt;/strong>&lt;/a>. Ingeniería y Ciencia, 8(15), 65-95.&lt;/p>
+&lt;/li>
+&lt;/ul></description></item><item><title>Continuous aggregation in Kafka Streams</title><link>https://leandro.ordonez.tech/es-co/ideas/continuous-aggregation-kafka-streams/</link><pubDate>Thu, 17 Oct 2019 10:45:27 +0200</pubDate><guid>https://leandro.ordonez.tech/es-co/ideas/continuous-aggregation-kafka-streams/</guid><description>&lt;figure>&lt;img src="https://leandro.ordonez.tech/images/ideas/lago-bolson.jpg"
+alt="Lago el Bolsón in Popayán, Colombia, my home town :)"/>&lt;figcaption>
+&lt;p>Lago el Bolsón in Popayán, Colombia, my home town :)&lt;/p>
+&lt;/figcaption>
+&lt;/figure>
+&lt;p>In this post I show a method to address the computation of the arithmetic mean of an stream of values (say sensor readings) using the Kafka Streams DSL. The estimation of the average in a stream processing setting implies keeping track of other two measurements, namely the count of incoming records and the sum of their corresponding values. Let&amp;rsquo;s consider a Kafka streams application consuming messages from a topic to which the readings of multiple temperature sensors are being posted (&lt;code>temperature-readings&lt;/code>). The messages from said topic are keyed by the sensor ID, and we want to compute the rolling average of the temperature sensed by each device.&lt;/p>
+&lt;p>Let&amp;rsquo;s first create a &lt;code>KGroupedStream&lt;/code> to group the sensor readings according to their corresponding sensor ID:&lt;/p>
+&lt;script type="application/javascript" src="https://gist.github.com/LeandroOrdonez/aadca09b9aaa41a3b61c41796f3581d1.js?file=KafkaStreamsAggregator_1.java">&lt;/script>
+&lt;p>Now we can use the &lt;code>KGroupedStream::aggregate&lt;/code> method to compute the rolling average on the &lt;code>perSensorStream&lt;/code> we got above. But before this, according to the Kafka &lt;a href="https://docs.confluent.io/current/streams/javadocs/org/apache/kafka/streams/kstream/KGroupedStream.html#aggregate-org.apache.kafka.streams.kstream.Initializer-org.apache.kafka.streams.kstream.Aggregator-">documentation&lt;/a> this method requires an &lt;code>Initializer&lt;/code> and an &lt;code>Aggregator&lt;/code> as arguments:&lt;/p>
+&lt;blockquote>
+&lt;p>The specified &lt;code>Initializer&lt;/code> is applied once directly before the first input record is processed to provide an initial intermediate aggregation result that is used to process the first record. The specified &lt;code>Aggregator&lt;/code> is applied for each input record and computes a new aggregate using the current aggregate (or for the very first record using the intermediate aggregation result provided via the Initializer) and the record&amp;rsquo;s value. Thus, aggregate(Initializer, Aggregator) can be used to compute aggregate functions like count (c.f. count()).&lt;/p>
+&lt;/blockquote>
+&lt;p>Let&amp;rsquo;s create a POJO to provide such initial aggregation and to hold the intermediate aggregation values:&lt;/p>
+&lt;script type="application/javascript" src="https://gist.github.com/LeandroOrdonez/aadca09b9aaa41a3b61c41796f3581d1.js?file=AggregateTuple.java">&lt;/script>
+&lt;p>Now we need to provide an implementation of the &lt;code>apply&lt;/code> method for the &lt;code>Aggregator&lt;/code> argument, which would be in charge of computing a new aggregate from the &lt;code>key&lt;/code> and &lt;code>value&lt;/code> of an incoming record and the current &lt;code>aggregate&lt;/code> of the same key:&lt;/p>
+&lt;script type="application/javascript" src="https://gist.github.com/LeandroOrdonez/aadca09b9aaa41a3b61c41796f3581d1.js?file=KafkaStreamsAggregator_2.java">&lt;/script>
+&lt;p>We can finally call the &lt;code>aggregate&lt;/code> method on the &lt;code>perSensorStream&lt;/code>:&lt;/p>
+&lt;script type="application/javascript" src="https://gist.github.com/LeandroOrdonez/aadca09b9aaa41a3b61c41796f3581d1.js?file=KafkaStreamsAggregator_3.java">&lt;/script>
+&lt;p>Below you can find the relevant code for the aggregation method outlined in this post.&lt;/p>
+&lt;script type="application/javascript" src="https://gist.github.com/LeandroOrdonez/aadca09b9aaa41a3b61c41796f3581d1.js?file=KafkaStreamsAggregator.java">&lt;/script>
+&lt;p>I didn&amp;rsquo;t include the code for handling serialization in this post, but you can find it here: &lt;a href="https://gist.github.com/LeandroOrdonez/aadca09b9aaa41a3b61c41796f3581d1#file-jsonpojoserializer-java">JsonPOJOSerializer&lt;/a> and &lt;a href="https://gist.github.com/LeandroOrdonez/aadca09b9aaa41a3b61c41796f3581d1#file-jsonpojodeserializer-java">JsonPOJODeserializer&lt;/a>.&lt;/p></description></item><item><title>Sobre mi</title><link>https://leandro.ordonez.tech/es-co/about/</link><pubDate>Fri, 11 Oct 2019 14:30:34 +0200</pubDate><guid>https://leandro.ordonez.tech/es-co/about/</guid><description>&lt;p>Soy ingeniero de datos y doctor en ingeniería informática de la &lt;a href="https://www.ugent.be/">Universidad de Gante&lt;/a> en Bélgica. Mi trabajo de investigación tiene que ver con optimizar el acceso a grandes colecciones de datos almacenados en sistemas heterogeneos y distribuidos. También soy el fundador de &lt;a href="https://thebitbang.company">BitBang Company&lt;/a> una empresa dedicada a acercar las ventajas y beneficios del analisis de datos a gran escala a compañías de todos los tamaños. Actualmente la empresa opera en Colombia y cuenta con clientes en Centro y Sur América.&lt;/p>
+&lt;h4 id="intereses">Intereses&lt;/h4>
+&lt;ul>
+&lt;li>Aprendizaje Automático (Clustering, probabilistic topic models, bayesian inference)&lt;/li>
+&lt;li>Desarrollo de software (&lt;code>Python&lt;/code>, &lt;code>Java&lt;/code>, &lt;code>Node.js&lt;/code>)&lt;/li>
+&lt;li>Investigación académica (Big Data, Web, Semantics, Data engineering and Data management, Distributed systems)&lt;/li>
+&lt;/ul>
+&lt;h4 id="social-media">Social media&lt;/h4>
+&lt;ul>
+&lt;li>Twitter: &lt;a href="http://twitter.com/OrdonezLeandro">@OrdonezLeandro&lt;/a>&lt;/li>
+&lt;li>LinkedIn: &lt;a href="https://www.linkedin.com/in/leandroordonez">Leandro Ordóñez&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;p>O siempre puedes contactarme escribiendo a &lt;a href="mailto:leandro.ordonezante@ugent.be">Leandro.OrdonezAnte@UGent.be&lt;/a>&lt;/p></description></item></channel></rss>

@@ -1,0 +1,77 @@
+<!doctype html><html lang=en>
+<head>
+<meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta http-equiv=content-language content="en">
+<meta name=author content="Leandro Ordóñez Ante">
+<meta name=description content="Doctoral dissertation submitted to obtain the academic degree of Doctor of Computer Science Engineering from Ghent University.
+Download a digital copy here (PDF)
+Thesis summary  The rapid commoditization of data storage, computing power, and network capacity over the last decades has led to an explosive growth of the volume of data available, setting a trend that is expected to accelerate in the coming years. According to a recent forecast by the International Data Corporation (IDC), the amount of data generated worldwide only in 2021 is set to reach 79 zettabytes (i.">
+<meta name=keywords content="blog,developer,personal,big data,apache kafka,java,python,pandas,iot,time series">
+<meta name=twitter:card content="summary">
+<meta name=twitter:title content="Enabling interactive querying for latency-sensitive applications on big datasets">
+<meta name=twitter:description content="Doctoral dissertation submitted to obtain the academic degree of Doctor of Computer Science Engineering from Ghent University.
+Download a digital copy here (PDF)
+Thesis summary  The rapid commoditization of data storage, computing power, and network capacity over the last decades has led to an explosive growth of the volume of data available, setting a trend that is expected to accelerate in the coming years. According to a recent forecast by the International Data Corporation (IDC), the amount of data generated worldwide only in 2021 is set to reach 79 zettabytes (i.">
+<meta property="og:title" content="Enabling interactive querying for latency-sensitive applications on big datasets">
+<meta property="og:description" content="Doctoral dissertation submitted to obtain the academic degree of Doctor of Computer Science Engineering from Ghent University.
+Download a digital copy here (PDF)
+Thesis summary  The rapid commoditization of data storage, computing power, and network capacity over the last decades has led to an explosive growth of the volume of data available, setting a trend that is expected to accelerate in the coming years. According to a recent forecast by the International Data Corporation (IDC), the amount of data generated worldwide only in 2021 is set to reach 79 zettabytes (i.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://leandro.ordonez.tech/phd/"><meta property="article:section" content>
+<meta property="article:published_time" content="2022-03-10T15:20:01+01:00">
+<meta property="article:modified_time" content="2022-03-10T15:20:01+01:00">
+<base href=https://leandro.ordonez.tech/phd/>
+<title>
+Enabling interactive querying for latency-sensitive applications on big datasets · Leandro Ordóñez Ante
+</title><link rel=canonical href=https://leandro.ordonez.tech/phd/>
+<link href="https://fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather:300,700%7CSource+Code+Pro:400,700&display=swap" rel=stylesheet>
+<link rel=stylesheet href=https://use.fontawesome.com/releases/v5.13.0/css/all.css integrity=sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V crossorigin=anonymous>
+<link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin=anonymous>
+<link rel=stylesheet href=https://leandro.ordonez.tech/css/coder.min.28d751104f30c16da1aa1bb04015cbe662cacfe0d1b01af4f2240ad58580069c.css integrity="sha256-KNdREE8wwW2hqhuwQBXL5mLKz+DRsBr08iQK1YWABpw=" crossorigin=anonymous media=screen>
+<link rel=stylesheet href=https://leandro.ordonez.tech/css/custom.css>
+<link rel=icon type=image/png href=https://leandro.ordonez.tech/images/favicon-32x32.png sizes=32x32>
+<link rel=icon type=image/png href=https://leandro.ordonez.tech/images/favicon-16x16.png sizes=16x16>
+<meta name=generator content="Hugo 0.93.3">
+<script type=application/ld+json>{"@context":"https://schema.org","@type":"Person","@id":"https://leandro.ordonez.tech/#me","name":"Leandro Ordóñez Ante","url":"https://leandro.ordonez.tech","email":"Leandro.OrdonezAnte@UGent.be","image":"images/avatar.jpg","jobTitle":"PhD Researcher in Computer Sciences","nationality":"Colombian","birthPlace":{"@type":"Place","address":{"@type":"PostalAddress","addressLocality":"Popayan","addressCountry":"Colombia"}},"affiliation":[{"@type":"Organization","name":"Ghent University","sameAs":["https://twitter.com/ugent","https://www.facebook.com/ugent /","https://www.linkedin.com/ghent-university/","https://www.youtube.com/user/UniversiteitGent"]},{"@type":"Organization","name":"The BitBang Co.","sameAs":["https://twitter.com/bitbangcompany","https://www.facebook.com/bitbangcompany /","https://www.linkedin.com/company/tbbc/"]}],"sameAs":["https://github.com/LeandroOrdonez","https://gitlab.ilabt.imec.be/lordezan","https://twitter.com/OrdonezLeandro","https://linkedin.com/in/leandroordonez","https://stackoverflow.com/story/leandroordonez"]}</script>
+</head><body class=colorscheme-light>
+<main class=wrapper>
+<nav class=navigation>
+<section class=container>
+<a class=navigation-title href=https://leandro.ordonez.tech/>
+Leandro Ordóñez Ante
+</a>
+<input type=checkbox id=menu-toggle>
+<label class="menu-button float-right" for=menu-toggle><i class="fas fa-bars"></i></label>
+<ul class=navigation-list>
+<li class=navigation-item>
+<a class=navigation-link href=https://leandro.ordonez.tech/ideas/>Scrapbook</a>
+</li><li class=navigation-item>
+<a class=navigation-link href=https://leandro.ordonez.tech/publications/>Publications</a>
+</li><li class=navigation-item>
+<a class=navigation-link href=https://leandro.ordonez.tech/phd/>PhD</a>
+</li><li class=navigation-item>
+<a class=navigation-link href=https://leandro.ordonez.tech/about/>About</a>
+</li><li class="navigation-item menu-separator">
+<span>|</span>
+</li><li class=navigation-item>
+<a href=https://leandro.ordonez.tech/es-co/phd/>Español</a>
+</li></ul></section></nav><div class=content>
+<section class="container page">
+<article>
+<header>
+<h1>Enabling interactive querying for latency-sensitive applications on big datasets</h1></header><p>Doctoral dissertation submitted to obtain the academic degree of Doctor of Computer Science Engineering from <a href=https://www.ugent.be/>Ghent University</a>.</p><p><em>Download a digital copy <a href=https://cloud.ilabt.imec.be/index.php/s/83jpXHMdsQ4Cem9>here (PDF)</a></em></p><h2 id=thesis-summary>Thesis summary</h2><hr>
+<p>The rapid commoditization of data storage, computing power, and network capacity over the last decades has led to an explosive growth of the volume of data available, setting a trend that is expected to accelerate in the coming years. According to a recent forecast by the International Data Corporation (IDC), the amount of data generated worldwide only in 2021 is set to reach 79 zettabytes (i.e., 79 $\times$10$^{21}$ bytes). Furthermore, this metric will compound over the next five years, placing the volume of data created globally at 181 zettabytes by 2025. In the modern hyperconnected world, virtually every interaction we have with our surroundings leaves behind a digital footprint. Organizations in all sectors are increasingly turning to Internet of Things (IoT) technologies to monitor their operations and collect data concerning their business activity. As the volume, variety, and complexity of data grow larger, so does the difficulty for processing, analyzing, and distilling insights from it. Such <em>big data</em> sets have long outgrown the capabilities offered by traditional data management technologies, and have brought to the forefront the need for alternative mechanisms for persisting and accessing data in a reliable, scalable and performant manner. Research and innovation in big data management have led to the development of a vast variety of solutions each one catering to certain particular use cases. These big data technologies range from NoSQL databases able to accommodate data encoded in a diversity of data models (e.g., document-based, key-value data, graph, and columnar-based), to distributed systems capable of harnessing the resources of a cluster of commodity machines to store and run data-intensive workloads.</p><p>For modern organizations, being able to access data and derive insights from it as soon as it is generated has become of utmost importance to support opportune decision-making. The need to minimize this <em>data-to-insight</em> time has led to an increasing interest in <em>event-based architectures</em> and <em>near real-time stream processing frameworks</em>. However, in spite of their growing popularity, these kinds of solutions remain largely untapped by businesses. Most of the data processing conducted nowadays still predominantly relies on batch processing methods which are known to be subject to high latency. In such circumstances, organizations face the risk of making decisions and taking action on stale data, especially for latency-sensitive applications running on these large, high-dimensional data collections. This dissertation sets off to advance in the understanding of the problem of enabling interactive low-latency querying on large multidimensional data sets. In relation to this problem, four major challenges are addressed throughout the dissertation:</p><ol>
+<li>Dimensional modeling is a staple technique for structuring historical business data, which resorts to denormalized schemas to enable fast processing of analytical queries. However, once defined, these schemas offer little flexibility to adapt to changes in the workload and to optimize for time-consuming queries. This dissertation explores mechanisms for feeding information about the actual use of the data back to the analytical system to speed up query execution.</li><li>Performing exploratory analysis over live and historical multidimensional data is particularly demanding for data processing systems due to the ever-growing volume of data and the complexity of the queries required to fulfill the exploration goals. A large part of the contributions presented in this thesis are aimed at identifying common data access patterns behind typical exploratory actions, and at devising data processing mechanisms enabling interactive response times for queries associated with said patterns.</li><li>Traditionally, most of the heavy lifting of query processing is conducted in backend or server-side components. When it comes to time-sensitive applications serving multiple clients, computational costs linked to each individual query can quickly add up thus hampering service scalability. A more balanced trade-off between server-side and client-side processing is studied in this dissertation, to favor system scalability while still delivering interactive query computation.</li><li>Data retrieval patterns often reflect information needs or user preferences. These patterns are particularly dynamic and volatile when applications deal with multiple simultaneous clients. In these circumstances, any data structures created to speed up certain specific queries are quickly rendered obsolete. Proactive mechanisms to adjust to changes in these retrieval patterns and anticipate client requests are required to ensure low-latency querying in time-critical applications.</li></ol></article></section><script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script type=text/javascript async src=https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js></script>
+<script src=https://cdn.jsdelivr.net/npm/mathjax@3/es5/startup.js id=MathJax-script></script>
+<script>MathJax={tex:{inlineMath:[["$","$"],["\\(","\\)"]],processEscapes:!0,processEnvironments:!0},options:{skipHtmlTags:["script","noscript","style","textarea","pre"]}}</script>
+</div><footer class=footer>
+<section class=container>
+<p>Researching mechanisms for accessing large data in fast, efficient and reliable ways</p>©
+2022
+Leandro Ordóñez Ante
+·
+Powered by <a href=https://gohugo.io/>Hugo</a> & <a href=https://github.com/luizdepra/hugo-coder/>Coder</a>.
+</section></footer></main><script type=application/javascript>var doNotTrack=!1;doNotTrack||(function(e,o,i,a,t,n,s){e.GoogleAnalyticsObject=t,e[t]=e[t]||function(){(e[t].q=e[t].q||[]).push(arguments)},e[t].l=1*new Date,n=o.createElement(i),s=o.getElementsByTagName(i)[0],n.async=1,n.src=a,s.parentNode.insertBefore(n,s)}(window,document,"script","https://www.google-analytics.com/analytics.js","ga"),ga("create","UA-149589206-1","auto"),ga("send","pageview"))</script>
+</body></html>
