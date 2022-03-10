@@ -124,7 +124,7 @@ googleAnalytics = "UA-149589206-1"
 
         [languages.es-co.params]
             author = "Leandro Ordóñez Ante"
-            info = "Ingeniero de Datos y Doctor en Ciencias de la Computación"
+            info = "Ingeniero de Datos y Doctor en Ingeniería Informática"
             description = "Sitio web personal del Leandro Ordóñez"
             keywords = "blog,desarrollador,personal"
             footercontent = "Investigo mecanismos para el acceso a Big Data de manera rápida, eficiente y confiable"
