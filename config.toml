@@ -31,6 +31,9 @@ googleAnalytics = "UA-149589206-1"
     hidecopyright = false
 
     rtl = false
+    colorScheme = "auto"
+    # Hide the toggle button, along with the associated vertical divider
+    hideColorSchemeToggle = false
 
     math = true
     custom_css = ["css/custom.css"]
