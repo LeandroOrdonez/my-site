@@ -1,20 +1,32 @@
 ---
-title: "Sobre mi"
-date: 2019-10-11T14:30:34+02:00
+title: "Sobre mí"
+date: 2019-10-11T13:44:57+02:00
 draft: false
 ---
 
-Soy ingeniero de datos y doctor en ingeniería informática de la [Universidad de Gante](https://www.ugent.be/) en Bélgica. Mi trabajo de investigación tiene que ver con optimizar el acceso a grandes colecciones de datos almacenados en sistemas heterogeneos y distribuidos. También soy el fundador de [BitBang Company](https://thebitbang.company) una empresa dedicada a acercar las ventajas y beneficios del analisis de datos a gran escala a compañías de todos los tamaños. Actualmente la empresa opera en Colombia y cuenta con clientes en Centro y Sur América.
+¡Hola! Soy Leandro Ordóñez, un experimentado ingeniero de datos y doctor en Ingeniería de Ciencias de la Computación de [IDLab](https://idlab.technology/) en [UGent](https://www.ugent.be/). Mi investigación se centra en facilitar el acceso rápido a grandes conjuntos de datos almacenados en tecnologías de almacenamiento de datos heterogéneas y distribuidas.
 
-#### Intereses
+Además de mis estudios académicos, soy uno de los fundadores de [BitBang Company](https://thebitbang.company), una empresa dedicada a aprovechar las ventajas del Big Data y el Análisis de Datos para negocios de todos los tamaños. Actualmente, la empresa opera en Colombia con clientes en América del Sur y América Central.
 
-* Aprendizaje Automático (Clustering, probabilistic topic models, bayesian inference)
-* Desarrollo de software (`Python`, `Java`, `Node.js`)
-* Investigación académica (Big Data, Web, Semantics, Data engineering and Data management, Distributed systems)
+Desde abril de 2022 trabajo como Ingeniero de Ciencia de Datos en [Yazzoom](https://yazzoom.com), una empresa emergente belga con sede en Gante. Yazzoom se especializa en software de inteligencia artificial diseñado para mejorar procesos empresariales, con un fuerte enfoque en análisis de datos avanzado.
 
-#### Social media
+### Intereses y Habilidades
 
-* Twitter: [@OrdonezLeandro](http://twitter.com/OrdonezLeandro)
-* LinkedIn: [Leandro Ordóñez](https://www.linkedin.com/in/leandroordonez)
+Mi experiencia abarca una amplia gama de campos, incluyendo:
 
-O siempre puedes contactarme escribiendo a [Leandro.OrdonezAnte@UGent.be](mailto:leandro.ordonezante@ugent.be)
+- **Aprendizaje Automático, Ciencia de Datos e Ingeniería de Datos:** Experto en herramientas como `scikit-learn`, `SciPy`, `Pandas`, `NumPy`, `matplotlib`, `seaborn`, `Hadoop`, `Spark`, `Kafka`, `Jupyter Notebook`, `Docker` y `Kubernetes`.
+
+- **Desarrollo de Software:** Habilidades en lenguajes como `Python`, `Java`, `JavaScript`. Experiencia en gestión de bases de datos con `PostgreSQL`, `MySQL` y `MongoDB`.
+
+- **Investigación Académica:** Especializado en Big Data, Web, Semántica, Ingeniería de Datos y Sistemas Distribuidos.
+
+### Conéctate conmigo
+
+Puedes encontrarme en:
+
+- **Twitter:** [@OrdonezLeandro](http://twitter.com/OrdonezLeandro)
+- **LinkedIn:** [Leandro Ordóñez](https://www.linkedin.com/in/leandroordonez)
+
+También a través de correo electrónico en [leandro.ordonez.ante@gmail.com](mailto:leandro.ordonez.ante@gmail.com).
+
+¡Gracias por visitar mi página! 😊

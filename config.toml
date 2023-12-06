@@ -38,7 +38,6 @@ googleAnalytics = "UA-149589206-1"
     image = "images/avatar.jpg"
     header = "Leandro Ordóñez Ante"
     github = "LeandroOrdonez"
-    gitlab = "lordezan"
     twitter = "OrdonezLeandro"
     linkedin = "leandroordonez"
     stackoverflow = "leandroordonez"
@@ -49,11 +48,6 @@ googleAnalytics = "UA-149589206-1"
     icon = "fab fa-github fa-2x"
     weight = 1
     url = "https://github.com/LeandroOrdonez/"
-[[params.social]]
-    name = "Gitlab"
-    icon = "fab fa-gitlab fa-2x"
-    weight = 2
-    url = "https://gitlab.ilabt.imec.be/lordezan/"
 [[params.social]]
     name = "Twitter"
     icon = "fab fa-twitter fa-2x"

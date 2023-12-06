@@ -4,19 +4,30 @@ date: 2019-10-11T13:44:57+02:00
 draft: false
 ---
 
-I'm an data engineer and Ph.D. in Computer Sciences Engineerting from [IDLab](https://idlab.technology/) - [UGent](https://www.ugent.be/). My research has been around enabling fast access to large data stored in heterogeneous and distributed data storage technologies. I'm also one of the founders of the [BitBang Company](https://thebitbang.company), a company devoted to bring the perks of Big Data and Data Analysis to businesses of all sizes. The company currently operates in Colombia with clients in South and Central America.
+Hello there! I'm Leandro Ordóñez, a seasoned data engineer and holder of a Ph.D. in Computer Sciences Engineering from [IDLab](https://idlab.technology/) at [UGent](https://www.ugent.be/). My research focus revolves around facilitating rapid access to extensive datasets stored in diverse and distributed data storage technologies.
 
-#### Interests and skills
+In addition to my academic pursuits, I co-founded the [BitBang Company](https://thebitbang.company), where we passionately harness the power of Big Data and Data Analysis to benefit businesses of all sizes. Currently based in Colombia, our operations extend across South and Central America, serving a diverse clientele.
 
-* Machine Learning, Data Science, and Data Engineering (`scikit-learn`, `SciPy`, `Pandas`, `NumPy`, `matplotlib`, `seaborn`, `Hadoop`, `Spark`, `Kafka`, `Jupyter Notebook`, `Docker`, `Kubernetes`) 
-* Software development (`Python`, `Java`, `javascript`, `Node.js`, `PostgreSQL`, `MySQL`, `MongoDB`)
-* Academic research (Big Data, Web, Semantics, Data engineering and Data management, Distributed systems)
+Since April 2022, I'm a Data Science Engineer at [Yazzoom](https://yazzoom.com), a Belgian scale-up based in Ghent. Yazzoom specializes in artificial intelligence software designed to enhance business processes, with a strong focus on advanced data analysis. 
 
-#### Social media handles
 
-* Twitter: [@OrdonezLeandro](http://twitter.com/OrdonezLeandro)
-* LinkedIn: [Leandro Ordóñez](https://www.linkedin.com/in/leandroordonez)
+### Interests and Skills
 
-Or you can always contact me at [Leandro.OrdonezAnte@UGent.be](mailto:leandro.ordonezante@ugent.be)
+My expertise spans a wide range of fields, including:
 
-Feel free to browse around! :)
+- **Machine Learning, Data Science, and Data Engineering:** Proficient in tools such as `scikit-learn`, `SciPy`, `Pandas`, `NumPy`, `matplotlib`, `seaborn`, `Hadoop`, `Spark`, `Kafka`, `Jupyter Notebook`, `Docker`, and `Kubernetes`.
+
+- **Software Development:** Skilled in languages like `Python`, `Java`, `JavaScript`, and frameworks such as `Node.js`. Experienced in database management with `PostgreSQL`, `MySQL`, and `MongoDB`.
+
+- **Academic Research:** Specializing in Big Data, Web, Semantics, Data Engineering, and Distributed Systems.
+
+### Let's Connect!
+
+You can find me on:
+
+- **Twitter:** [@OrdonezLeandro](http://twitter.com/OrdonezLeandro)
+- **LinkedIn:** [Leandro Ordóñez](https://www.linkedin.com/in/leandroordonez)
+
+Feel free to reach out via email at [leandro.ordonez.ante@gmail.com](mailto:leandro.ordonez.ante@gmail.com).
+
+Thanks for stopping by! 😊
