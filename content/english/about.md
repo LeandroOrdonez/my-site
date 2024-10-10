@@ -4,11 +4,7 @@ date: 2019-10-11T13:44:57+02:00
 draft: false
 ---
 
-# Transforming data into insights
-
 Hello! I'm Leandro Ordóñez, a data engineer and scientist with a Ph.D. in Computer Sciences Engineering from [UGent's IDLab](https://idlab.technology/). My passion lies in unlocking the potential of vast, distributed datasets, making them accessible and actionable for businesses and researchers alike.
-
-## From academic halls to startup frontlines
 
 My journey has taken me from the cutting-edge research environment of IDLab to the dynamic world of tech entrepreneurship. As co-founder of [BitBang Company](https://thebitbang.company), I've had the privilege of helping businesses across South and Central America harness the transformative power of Big Data and Analytics.
 

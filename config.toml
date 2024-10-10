@@ -13,7 +13,8 @@ pygmentscodefencesguesssyntax = true
 
 disqusShortname = "personal-site-of-leandro-ordonez"
 
-googleAnalytics = "G-7HZJ3L2M6V"
+[params.googleTagManager]
+    id = "G-7HZJ3L2M6V"
 
 [params]
     author = "Leandro Ordóñez Ante"
