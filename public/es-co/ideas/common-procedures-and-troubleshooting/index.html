@@ -1,114 +1,576 @@
-<!doctype html><html lang=es-co>
-<head>
-<meta charset=utf-8>
-<meta name=viewport content="width=device-width,initial-scale=1">
-<meta http-equiv=content-language content="es-co">
-<meta name=author content="Leandro Ordóñez Ante">
-<meta name=description content="Photo by Lieve Ransijn on Unsplash
-  This is a &ldquo;curated&rdquo; list of pointers I have found handy during my long coding sessions (a major part of which I still spend yak shaving someone else&rsquo;s code).
-Angular related:  Reloading current route in Angular 5 / Angular 6 (reload component when clicking browser&rsquo;s back button) Angular material datatable example (sortable, selectable and filterable) Angular material checkbox + forms example How to prevent robots from crawling an Angular application ng-number-picker  Python Dev and Data analysis:  Matplotlib: Save images in high quality (EPS, PDF) Matplotlib: Prevent plot labels from getting cut off when saving them Matplotlib: How to put the legend out of the plot Matplotlib: Reverse the order of legend Matplotlib: Read the data and plotting with multiple markers Matplotlib: Using matplotlib in jupyter notebooks — comparing methods and some tips (%matplotlib <>) python re: Non-capturing groups pip 10 and apt: How to avoid “Cannot uninstall X” errors for distutils packages  scipy & scikit-learn: How to calculate Silhouette Score of the scipy&rsquo;s fcluster using scikit-learn silhouette score?">
-<meta name=keywords content="blog,desarrollador,personal">
-<meta name=twitter:card content="summary">
-<meta name=twitter:title content="Common procedures and troubleshooting">
-<meta name=twitter:description content="Photo by Lieve Ransijn on Unsplash
-  This is a &ldquo;curated&rdquo; list of pointers I have found handy during my long coding sessions (a major part of which I still spend yak shaving someone else&rsquo;s code).
-Angular related:  Reloading current route in Angular 5 / Angular 6 (reload component when clicking browser&rsquo;s back button) Angular material datatable example (sortable, selectable and filterable) Angular material checkbox + forms example How to prevent robots from crawling an Angular application ng-number-picker  Python Dev and Data analysis:  Matplotlib: Save images in high quality (EPS, PDF) Matplotlib: Prevent plot labels from getting cut off when saving them Matplotlib: How to put the legend out of the plot Matplotlib: Reverse the order of legend Matplotlib: Read the data and plotting with multiple markers Matplotlib: Using matplotlib in jupyter notebooks — comparing methods and some tips (%matplotlib <>) python re: Non-capturing groups pip 10 and apt: How to avoid “Cannot uninstall X” errors for distutils packages  scipy & scikit-learn: How to calculate Silhouette Score of the scipy&rsquo;s fcluster using scikit-learn silhouette score?">
-<meta property="og:title" content="Common procedures and troubleshooting">
-<meta property="og:description" content="Photo by Lieve Ransijn on Unsplash
-  This is a &ldquo;curated&rdquo; list of pointers I have found handy during my long coding sessions (a major part of which I still spend yak shaving someone else&rsquo;s code).
-Angular related:  Reloading current route in Angular 5 / Angular 6 (reload component when clicking browser&rsquo;s back button) Angular material datatable example (sortable, selectable and filterable) Angular material checkbox + forms example How to prevent robots from crawling an Angular application ng-number-picker  Python Dev and Data analysis:  Matplotlib: Save images in high quality (EPS, PDF) Matplotlib: Prevent plot labels from getting cut off when saving them Matplotlib: How to put the legend out of the plot Matplotlib: Reverse the order of legend Matplotlib: Read the data and plotting with multiple markers Matplotlib: Using matplotlib in jupyter notebooks — comparing methods and some tips (%matplotlib <>) python re: Non-capturing groups pip 10 and apt: How to avoid “Cannot uninstall X” errors for distutils packages  scipy & scikit-learn: How to calculate Silhouette Score of the scipy&rsquo;s fcluster using scikit-learn silhouette score?">
-<meta property="og:type" content="article">
-<meta property="og:url" content="https://leandro.ordonez.tech/es-co/ideas/common-procedures-and-troubleshooting/"><meta property="article:section" content="ideas">
-<meta property="article:published_time" content="2019-11-11T20:29:41+01:00">
-<meta property="article:modified_time" content="2019-11-11T20:29:41+01:00">
-<base href=https://leandro.ordonez.tech/es-co/ideas/common-procedures-and-troubleshooting/>
-<title>
-Common procedures and troubleshooting · Leandro Ordóñez Ante
-</title><link rel=canonical href=https://leandro.ordonez.tech/es-co/ideas/common-procedures-and-troubleshooting/>
-<link href="https://fonts.googleapis.com/css?family=Lato:400,700%7CMerriweather:300,700%7CSource+Code+Pro:400,700&display=swap" rel=stylesheet>
-<link rel=stylesheet href=https://use.fontawesome.com/releases/v5.13.0/css/all.css integrity=sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V crossorigin=anonymous>
-<link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin=anonymous>
-<link rel=stylesheet href=https://leandro.ordonez.tech/css/coder.min.a4f332213a21ce8eb521670c614470c58923aaaf385e2a73982c31dd7642decb.css integrity="sha256-pPMyITohzo61IWcMYURwxYkjqq84XipzmCwx3XZC3ss=" crossorigin=anonymous media=screen>
-<link rel=stylesheet href=https://leandro.ordonez.tech/css/custom.css>
-<link rel=icon type=image/png href=https://leandro.ordonez.tech/images/favicon-32x32.png sizes=32x32>
-<link rel=icon type=image/png href=https://leandro.ordonez.tech/images/favicon-16x16.png sizes=16x16>
-<meta name=generator content="Hugo 0.93.3">
-<script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"Common procedures and troubleshooting","image":"https://leandro.ordonez.tech","datePublished":"2019-11-11T20:29:41+01:00","dateModified":"2019-11-11T20:29:41+01:00","author":{"@type":"Person","name":"Leandro Ordóñez Ante"},"mainEntityOfPage":{"@type":"WebPage"},"publisher":{"@type":"Organization","name":"Leandro Ordóñez Ante","logo":{"@type":"ImageObject","url":"https://leandro.ordonez.tech/images/avatar.jpg"}},"description":"Photo by Lieve Ransijn on Unsplash\n  This is a \u0026ldquo;curated\u0026rdquo; list of pointers I have found handy during my long coding sessions (a major part of which I still spend yak shaving someone else\u0026rsquo;s code).\nAngular related:  Reloading current route in Angular 5 / Angular 6 (reload component when clicking browser\u0026rsquo;s back button) Angular material datatable example (sortable, selectable and filterable) Angular material checkbox + forms example How to prevent robots from crawling an Angular application ng-number-picker  Python Dev and Data analysis:  Matplotlib: Save images in high quality (EPS, PDF) Matplotlib: Prevent plot labels from getting cut off when saving them Matplotlib: How to put the legend out of the plot Matplotlib: Reverse the order of legend Matplotlib: Read the data and plotting with multiple markers Matplotlib: Using matplotlib in jupyter notebooks — comparing methods and some tips (%matplotlib \u0026lt;\u0026gt;) python re: Non-capturing groups pip 10 and apt: How to avoid “Cannot uninstall X” errors for distutils packages  scipy \u0026amp; scikit-learn: How to calculate Silhouette Score of the scipy\u0026rsquo;s fcluster using scikit-learn silhouette score?","keywords":["troubleshooting","programming","yak shaving"]}</script>
-</head><body class=colorscheme-light>
-<main class=wrapper>
-<nav class=navigation>
-<section class=container>
-<a class=navigation-title href=https://leandro.ordonez.tech/es-co>
-Leandro Ordóñez Ante
-</a>
-<input type=checkbox id=menu-toggle>
-<label class="menu-button float-right" for=menu-toggle><i class="fas fa-bars"></i></label>
-<ul class=navigation-list>
-<li class=navigation-item>
-<a class=navigation-link href=https://leandro.ordonez.tech/es-co/ideas/>Scrapbook</a>
-</li><li class=navigation-item>
-<a class=navigation-link href=https://leandro.ordonez.tech/es-co/publications/>Publicaciones</a>
-</li><li class=navigation-item>
-<a class=navigation-link href=https://leandro.ordonez.tech/es-co/phd/>PhD</a>
-</li><li class=navigation-item>
-<a class=navigation-link href=https://leandro.ordonez.tech/es-co/about/>Sobre mi</a>
-</li><li class="navigation-item menu-separator">
-<span>|</span>
-</li><li class=navigation-item>
-<a href=https://leandro.ordonez.tech/ideas/common-procedures-and-troubleshooting/>English</a>
-</li></ul></section></nav><div class=content>
-<section class="container post">
-<article>
-<header>
-<div class=post-title>
-<h1 class=title>Common procedures and troubleshooting</h1></div><div class=post-meta>
-<div class=date>
-<span class=posted-on>
-<i class="fas fa-calendar"></i>
-<time datetime=2019-11-11T20:29:41+01:00>
-November 11, 2019
-</time>
-</span>
-<span class=reading-time>
-<i class="fas fa-clock"></i>
-4-minute read
-</span>
-</div><div class=categories>
-<i class="fas fa-folder"></i>
-<a href=https://leandro.ordonez.tech/es-co/categories/programming/>Programming</a>
-<span class=separator>•</span>
-<a href=https://leandro.ordonez.tech/es-co/categories/data-management/>Data management</a>
-<span class=separator>•</span>
-<a href=https://leandro.ordonez.tech/es-co/categories/research/>Research</a></div><div class=tags>
-<i class="fas fa-tag"></i>
-<a href=https://leandro.ordonez.tech/es-co/tags/troubleshooting/>troubleshooting</a>
-<span class=separator>•</span>
-<a href=https://leandro.ordonez.tech/es-co/tags/programming/>programming</a>
-<span class=separator>•</span>
-<a href=https://leandro.ordonez.tech/es-co/tags/yak-shaving/>yak shaving</a></div></div></header><div>
-<figure><img src=https://leandro.ordonez.tech/images/ideas/yak-shaving-min.jpg alt="Photo by Lieve Ransijn on Unsplash"><figcaption>
-<p>Photo by <a href=https://unsplash.com/@lievemax>Lieve Ransijn</a> on <a href=https://unsplash.com/photos/FsJ_vzp_NI4>Unsplash</a></p></figcaption></figure><p>This is a &ldquo;<em>curated</em>&rdquo; list of pointers I have found handy during my long coding sessions (a major part of which I still spend <a href=https://www.techopedia.com/definition/15511/yak-shaving>yak shaving</a> someone else&rsquo;s code).</p><h3 id=angular-related>Angular related:</h3><ul>
-<li><a href=https://medium.com/engineering-on-the-incline/reloading-current-route-on-click-angular-5-1a1bfc740ab2>Reloading current route in Angular 5 / Angular 6 (reload component when clicking browser&rsquo;s back button)</a></li><li><a href="https://stackblitz.com/edit/angular-material2-table?file=app%2Fapp.component.ts">Angular material datatable example (sortable, selectable and filterable)</a></li><li><a href="https://stackblitz.com/edit/angular-tyfg2z?file=app%2Fapp.component.ts">Angular material checkbox + forms example</a></li><li><a href=https://jeffshamley.com/blogs/how-block-robots-crawling-your-angular-application>How to prevent robots from crawling an Angular application</a></li><li><a href=https://www.npmjs.com/package/ng-number-picker><code>ng-number-picker</code></a></li></ul><h3 id=python-dev-and-data-analysis>Python Dev and Data analysis:</h3><ul>
-<li><a href=https://stackoverflow.com/questions/16183462/saving-images-in-python-at-a-very-high-quality><code>Matplotlib</code>: Save images in high quality (EPS, PDF)</a></li><li><a href=https://stackoverflow.com/questions/21288062/second-y-axis-label-getting-cut-off/21288063><code>Matplotlib</code>: Prevent plot labels from getting cut off when saving them</a></li><li><a href=https://stackoverflow.com/a/4701285/2412831><code>Matplotlib</code>: How to put the legend out of the plot</a></li><li><a href=https://stackoverflow.com/q/34576059/2412831><code>Matplotlib</code>: Reverse the order of legend</a></li><li><a href=https://pydatascience.org/2017/12/05/read-the-data-and-plotting-with-multiple-markers/><code>Matplotlib</code>: Read the data and plotting with multiple markers</a></li><li><a href=https://medium.com/@1522933668924/using-matplotlib-in-jupyter-notebooks-comparing-methods-and-some-tips-python-c38e85b40ba1><code>Matplotlib</code>: Using matplotlib in jupyter notebooks — comparing methods and some tips (<code>%matplotlib &lt;></code>)</a></li><li><a href=https://stackoverflow.com/questions/18425386/re-findall-not-returning-full-match><code>python re</code>: Non-capturing groups</a></li><li><a href=https://stackoverflow.com/a/50396798/2412831><code>pip 10 and apt</code>: How to avoid “Cannot uninstall X” errors for distutils packages
-</a></li><li><a href=https://stackoverflow.com/a/28187426/2412831><code>scipy & scikit-learn</code>: How to calculate Silhouette Score of the scipy&rsquo;s fcluster using scikit-learn silhouette score?</a></li><li><a href=https://stackoverflow.com/a/29334672/2412831><code>pandas</code>: How to read a large csv file in chunks</a></li><li><a href=https://www.kaggle.com/gvyshnya/parallel-operations-over-a-pandas-df><code>pandas</code>: Parallel operations over a pandas DataFrame</a></li><li><a href=https://stackoverflow.com/a/22477520/2412831><code>pandas</code>: Random selection per group</a></li><li><a href=https://deparkes.co.uk/2016/06/10/folium-map-tiles/><code>folium</code>: Map Tiles</a></li><li><a href=https://nbviewer.jupyter.org/github/python-visualization/folium/tree/master/examples/><code>folium</code>: Gallery of examples</a></li><li><a href=https://nbviewer.jupyter.org/github/python-visualization/folium/blob/master/examples/MarkerCluster.ipynb><code>folium</code>: Marker cluster</a></li><li><a href=https://stackoverflow.com/q/38899190/2412831><code>GeoPandas</code>: Label Polygons (see second answer)</a></li><li><a href=https://medium.com/@achm.firmansyah/an-approach-for-checking-overlaps-and-gaps-in-polygons-using-geopandas-ebd6606e7f70><code>GeoPandas</code>: An Approach for Checking Overlaps and Gaps in Polygons using Geopandas</a></li><li><a href=https://geoffboeing.com/2016/10/r-tree-spatial-index-python/><code>GeoPandas</code>: R-tree Spatial Indexing with Python (bounding box matches vs exact polygon matches)</a></li><li><a href=https://automating-gis-processes.github.io/2017/lessons/L3/nearest-neighbour.html><code>GeoPandas</code>: Nearest Neighbour Analysis (Nearest polygon to point)</a></li><li><a href=https://github.com/jupyter-widgets/ipyleaflet/issues/290><code>ipyleaflet</code>: Get coordinates out of map drawings</a></li><li><a href=https://stackoverflow.com/a/40941511/2412831><code>Jupyter</code> How to check the source code of a module</a></li><li><a href=https://stackoverflow.com/q/20803878/2412831><code>Geoalchemy2</code>: query all users within X meteres</a></li><li><a href=https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.io.json.json_normalize.html><code>pandas</code>: Normalize semi-structured JSON data into a flat table</a></li><li><a href=https://stackoverflow.com/a/22002048/2412831>Streaming data from Postgres into Python</a></li><li><a href=https://blog.tafkas.net/2018/09/28/creating-a-grid-based-on-geohashes/>Creating a grid based on GeoHashes</a></li><li><a href=https://github.com/wannesm/dtaidistance>Time series distances: Dynamic Time Warping (DTW) </a></li><li><a href=https://medium.com/@smirnov.am/running-flask-in-production-with-docker-1932c88f14d0>Running <code>Flask</code> in production with Docker</a></li><li><a href=https://scotch.io/tutorials/build-a-restful-api-with-flask-the-tdd-way>Build a RESTful API with Flask – The TDD Way</a></li></ul><h3 id=docker--kubernetes-related>Docker & Kubernetes related:</h3><ul>
-<li><a href=https://www.digitalocean.com/community/tutorials/how-to-build-a-node-js-application-with-docker>How To Build a Node.js Application with Docker</a></li><li><a href=https://stackoverflow.com/a/35689633/2412831>Starting a shell in the Docker Alpine container</a></li><li><a href=https://www.digitalocean.com/community/tutorials/how-to-share-data-between-docker-containers#step-1-%E2%80%94-creating-an-independent-volume>How To Share Data between Docker Containers</a></li><li><a href=https://www.andrewmahon.info/blog/docker-compose-data-science/>Docker Compose for Data Science (Jupyter + PostgreSQL)</a></li><li><a href=https://github.com/kubernetes/kubernetes/issues/41536#issuecomment-280354231><code>kubectl</code>: Pull docker image from private repository</a></li><li><a href=https://linuxhint.com/run_postgresql_docker_compose/>Running <code>PostgreSQL</code> using Docker Compose (with persistent volume)</a></li><li><a href=https://stackoverflow.com/a/30064175/2412831>Using <code>docker-compose</code>, how to execute multiple commands</a></li><li><a href=https://angristan.xyz/build-push-docker-images-gitlab-ci/>Automatically build and push Docker images using GitLab CI</a></li><li><a href=https://kubernetes.io/docs/tasks/configure-pod-container/pull-image-private-registry/><code>k8s</code>: Pull an Image from a Private Registry</a></li><li><a href=https://kubernetes.io/docs/tasks/configure-pod-container/configure-persistent-volume-storage/><code>k8s</code>: Configure persistent volume storage</a></li><li><a href=https://jaas.ai/kubernetes-core/bundle/815><code>K8s</code>, <code>juju</code>: Kubernetes Core bundle</a></li><li><a href=https://github.com/charmed-kubernetes/bundle/issues/357#issuecomment-316542831><code>K8S</code>, <code>juju</code>: Restart K8s related services manually (for the juju bundle)</a></li><li><a href=https://medium.com/@clouddev.guru/how-to-fix-kubernetes-namespace-deleting-stuck-in-terminating-state-5ed75792647e><code>K8S</code>: How to fix — Kubernetes <code>namespace</code> deleting stuck in Terminating state</a></li><li><a href=https://medium.com/better-programming/build-push-to-docker-with-maven-eea7c4b8cfa2>Build and Push to Docker With Maven</a></li></ul><h3 id=git-related>Git related</h3><ul>
-<li><a href=https://stackoverflow.com/a/16162000/2412831>Remove submodule</a></li></ul><h3 id=hadoop-related>Hadoop related:</h3><h4 id=decommisioning-hadoop-datanodes>Decommisioning Hadoop datanodes:</h4><ul>
-<li><a href=https://www.ibm.com/support/knowledgecenter/en/SSPT3X_4.1.0/com.ibm.swg.im.infosphere.biginsights.admin.doc/doc/iop_decom_nodes.html>Decommissioning slave nodes - IBM Knowledge Center</a></li><li><a href=https://www.cloudera.com/documentation/enterprise/5-9-x/topics/cdh_ig_decommision_datanodes.html>Decommissioning DataNodes Using the Command Line - Cloudera</a></li></ul><h4 id=fix-connection-issues-between-the-namenode-and-datanodes>Fix connection issues between the namenode and datanodes:</h4><ul>
-<li><a href=https://wiki.apache.org/hadoop/ConnectionRefused><code>Connection Refused</code></a></li></ul><h3 id=java-related>Java related:</h3><ul>
-<li><a href=https://stackoverflow.com/a/41347321/2412831><code>maven</code> Accessing resource files inside a jar: Java properties file in jar not found when running jar</a></li><li><a href=https://medium.com/@aruny/embedding-jetty-server-with-jersey-as-restful-container-with-cors-a3ea3c5381c9><code>Jetty</code>, <code>REST</code>, <code>CORS</code>: Embedding Jetty Server with Jersey as RESTful container with CORS</a></li></ul><h3 id=kafka-related>KafKa related:</h3><ul>
-<li><a href=https://cwiki.apache.org/confluence/display/KAFKA/Kafka+Stream+Usage+Patterns><code>Kafka Streams</code>: How to compute an (windowed) average?</a></li><li><a href=https://kafka.apache.org/23/documentation/streams/tutorial><code>Kafka Streams</code>: Write a Kafka Streams Application</a></li><li><a href=https://github.com/bryanyang0528/ksql-python><code>KSQL</code>: <code>ksql-python</code> A python wrapper for the KSQL REST API</a></li></ul><h3 id=latex-related>LaTeX related:</h3><ul>
-<li><a href=https://tex.stackexchange.com/a/9068>Large braces for specifying values of variables by condition</a></li></ul><h3 id=postgresql-related>PostgreSQL related:</h3><ul>
-<li><a href=https://www.citusdata.com/blog/2018/03/06/postgres-planner-and-its-usage-of-statistics/><code>CREATE STATISTICS</code>: The Postgres 10 feature you didn&rsquo;t know about</a></li><li><a href=http://tatiyants.com/pev/>PostgreSQL <code>Explain</code> Visualizer</a></li><li><a href=http://www.interdb.jp/pg/pgsql03.html>The Internals of PostgreSQL: Ch. 3 Query Processing (See subsection 3.2.2.2 on <code>run cost</code> and <code>selectivity</code>)</a></li><li><a href=https://stackoverflow.com/a/42118080/2412831>Using <code>date_trunc</code> to group by hour with a timestamp field?</a></li><li><a href=https://stackoverflow.com/questions/12343984/insert-trigger-to-update-another-table-using-postgresql>Insert trigger to Update another table using PostgreSQL</a></li></ul><h3 id=spark-related>Spark related:</h3><ul>
-<li><a href=https://community.hortonworks.com/questions/144181/num-executors-and-executor-memory-in-spark.html>On why large executor memory does not imply better performance</a></li><li><a href=https://community.hortonworks.com/questions/144181/num-executors-and-executor-memory-in-spark.html>On the <code>spark.sql.autoBroadcastJoinThreshold</code> setting - SparkSQL</a></li><li><a href=https://sujithjay.com/spark-sql/2018/06/28/Shuffle-Hash-and-Sort-Merge-Joins-in-Apache-Spark/>Shuffle Hash and Sort Merge Joins in Apache Spark</a></li><li><a href=https://sujithjay.com/spark-sql/2018/02/17/Broadcast-Hash-Joins-in-Apache-Spark/>Broadcast Hash Joins in Apache Spark</a></li><li><a href=https://sujithjay.com/2018/07/24/Understanding-Apache-Spark-on-YARN/>Understanding Apache Spark on YARN</a></li><li><a href=https://stackoverflow.com/a/41027619/2412831>Pyspark: Split multiple array columns into rows (<code>explode</code> method)</a></li><li><a href=https://stackoverflow.com/a/38189294/2412831>Convert comma separated string to array in pyspark dataframe</a></li></ul><h3 id=ubuntu-related>Ubuntu related:</h3><ul>
-<li><a href=https://www.digitalocean.com/community/tutorials/how-to-add-swap-space-on-ubuntu-18-04>How To Add Swap Space on Ubuntu 18.04</a></li><li><a href=https://help.ubuntu.com/community/Mount/USB>Disable automount</a></li></ul></div><footer>
-<div id=disqus_thread></div><script type=application/javascript>window.disqus_config=function(){},function(){if(["localhost","127.0.0.1"].indexOf(window.location.hostname)!=-1){document.getElementById("disqus_thread").innerHTML="Disqus comments not available by default when the website is previewed locally.";return}var t=document,e=t.createElement("script");e.async=!0,e.src="//personal-site-of-leandro-ordonez.disqus.com/embed.js",e.setAttribute("data-timestamp",+new Date),(t.head||t.body).appendChild(e)}()</script>
-<noscript>Please enable JavaScript to view the <a href=https://disqus.com/?ref_noscript>comments powered by Disqus.</a></noscript><a href=https://disqus.com class=dsq-brlink>comments powered by <span class=logo-disqus>Disqus</span></a>
-</footer></article></section></div><footer class=footer>
-<section class=container>
-<p>Investigo mecanismos para el acceso a Big Data de manera rápida, eficiente y confiable</p>©
-2022
-Leandro Ordóñez Ante
-·
-Powered by <a href=https://gohugo.io/>Hugo</a> & <a href=https://github.com/luizdepra/hugo-coder/>Coder</a>.
-</section></footer></main><script type=application/javascript>var doNotTrack=!1;doNotTrack||(function(e,o,i,a,t,n,s){e.GoogleAnalyticsObject=t,e[t]=e[t]||function(){(e[t].q=e[t].q||[]).push(arguments)},e[t].l=1*new Date,n=o.createElement(i),s=o.getElementsByTagName(i)[0],n.async=1,n.src=a,s.parentNode.insertBefore(n,s)}(window,document,"script","https://www.google-analytics.com/analytics.js","ga"),ga("create","UA-149589206-1","auto"),ga("send","pageview"))</script>
-</body></html>
+<!DOCTYPE html>
+<html lang="es-co">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <title>
+  Common procedures and troubleshooting · Leandro Ordóñez Ante
+</title>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+
+
+
+
+<meta name="author" content="Leandro Ordóñez Ante">
+<meta name="description" content="Photo by Lieve Ransijn on Unsplash
+This is a &ldquo;curated&rdquo; list of pointers I have found handy during my long coding sessions (a major part of which I still spend yak shaving someone else&rsquo;s code).
+Angular related: Link to heading Reloading current route in Angular 5 / Angular 6 (reload component when clicking browser&rsquo;s back button) Angular material datatable example (sortable, selectable and filterable) Angular material checkbox &#43; forms example How to prevent robots from crawling an Angular application ng-number-picker Python Dev and Data analysis: Link to heading Matplotlib: Save images in high quality (EPS, PDF) Matplotlib: Prevent plot labels from getting cut off when saving them Matplotlib: How to put the legend out of the plot Matplotlib: Reverse the order of legend Matplotlib: Read the data and plotting with multiple markers Matplotlib: Using matplotlib in jupyter notebooks — comparing methods and some tips (%matplotlib &lt;&gt;) python re: Non-capturing groups pip 10 and apt: How to avoid “Cannot uninstall X” errors for distutils packages scipy &amp; scikit-learn: How to calculate Silhouette Score of the scipy&rsquo;s fcluster using scikit-learn silhouette score?">
+<meta name="keywords" content="blog,desarrollador,personal">
+<meta name="fediverse:creator" content="" />
+
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Common procedures and troubleshooting">
+  <meta name="twitter:description" content="Photo by Lieve Ransijn on Unsplash
+This is a “curated” list of pointers I have found handy during my long coding sessions (a major part of which I still spend yak shaving someone else’s code).
+Angular related: Link to heading Reloading current route in Angular 5 / Angular 6 (reload component when clicking browser’s back button) Angular material datatable example (sortable, selectable and filterable) Angular material checkbox &#43; forms example How to prevent robots from crawling an Angular application ng-number-picker Python Dev and Data analysis: Link to heading Matplotlib: Save images in high quality (EPS, PDF) Matplotlib: Prevent plot labels from getting cut off when saving them Matplotlib: How to put the legend out of the plot Matplotlib: Reverse the order of legend Matplotlib: Read the data and plotting with multiple markers Matplotlib: Using matplotlib in jupyter notebooks — comparing methods and some tips (%matplotlib &lt;&gt;) python re: Non-capturing groups pip 10 and apt: How to avoid “Cannot uninstall X” errors for distutils packages scipy &amp; scikit-learn: How to calculate Silhouette Score of the scipy’s fcluster using scikit-learn silhouette score?">
+
+<meta property="og:url" content="http://localhost:1313/es-co/ideas/common-procedures-and-troubleshooting/">
+  <meta property="og:site_name" content="Leandro Ordóñez Ante">
+  <meta property="og:title" content="Common procedures and troubleshooting">
+  <meta property="og:description" content="Photo by Lieve Ransijn on Unsplash
+This is a “curated” list of pointers I have found handy during my long coding sessions (a major part of which I still spend yak shaving someone else’s code).
+Angular related: Link to heading Reloading current route in Angular 5 / Angular 6 (reload component when clicking browser’s back button) Angular material datatable example (sortable, selectable and filterable) Angular material checkbox &#43; forms example How to prevent robots from crawling an Angular application ng-number-picker Python Dev and Data analysis: Link to heading Matplotlib: Save images in high quality (EPS, PDF) Matplotlib: Prevent plot labels from getting cut off when saving them Matplotlib: How to put the legend out of the plot Matplotlib: Reverse the order of legend Matplotlib: Read the data and plotting with multiple markers Matplotlib: Using matplotlib in jupyter notebooks — comparing methods and some tips (%matplotlib &lt;&gt;) python re: Non-capturing groups pip 10 and apt: How to avoid “Cannot uninstall X” errors for distutils packages scipy &amp; scikit-learn: How to calculate Silhouette Score of the scipy’s fcluster using scikit-learn silhouette score?">
+  <meta property="og:locale" content="es_co">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="ideas">
+    <meta property="article:published_time" content="2019-11-11T20:29:41+01:00">
+    <meta property="article:modified_time" content="2019-11-11T20:29:41+01:00">
+    <meta property="article:tag" content="Troubleshooting">
+    <meta property="article:tag" content="Programming">
+    <meta property="article:tag" content="Yak Shaving">
+
+
+
+
+<link rel="canonical" href="http://localhost:1313/es-co/ideas/common-procedures-and-troubleshooting/">
+
+
+<link rel="preload" href="http://localhost:1313/fonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="http://localhost:1313/fonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="http://localhost:1313/fonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
+
+
+  
+  
+  <link rel="stylesheet" href="http://localhost:1313/css/coder.css" media="screen">
+
+
+
+
+
+
+  
+    
+    
+    <link rel="stylesheet" href="http://localhost:1313/css/coder-dark.css" media="screen">
+  
+
+
+
+ 
+
+
+
+
+<link rel="icon" type="image/svg+xml" href="http://localhost:1313/images/favicon.svg" sizes="any">
+<link rel="icon" type="image/png" href="http://localhost:1313/images/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="http://localhost:1313/images/favicon-16x16.png" sizes="16x16">
+
+<link rel="apple-touch-icon" href="http://localhost:1313/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="http://localhost:1313/images/apple-touch-icon.png">
+
+<link rel="manifest" href="http://localhost:1313/site.webmanifest">
+<link rel="mask-icon" href="http://localhost:1313/images/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+
+
+
+
+
+  <script type="application/ld+json">
+    
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "Common procedures and troubleshooting",
+      "image": "http://localhost:1313/",
+      "datePublished": "2019-11-11T20:29:41+01:00",
+      "dateModified": "2019-11-11T20:29:41+01:00",
+      "author": {
+        "@type": "Person",
+        "name": "Leandro Ordóñez Ante"
+      },
+      "mainEntityOfPage": { "@type": "WebPage" },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Leandro Ordóñez Ante",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://leandro.ordonez.tech/images/avatar.jpg"
+        }
+      },
+      "description": "Photo by Lieve Ransijn on Unsplash\nThis is a \u0026ldquo;curated\u0026rdquo; list of pointers I have found handy during my long coding sessions (a major part of which I still spend yak shaving someone else\u0026rsquo;s code).\nAngular related: Link to heading Reloading current route in Angular 5 / Angular 6 (reload component when clicking browser\u0026rsquo;s back button) Angular material datatable example (sortable, selectable and filterable) Angular material checkbox + forms example How to prevent robots from crawling an Angular application ng-number-picker Python Dev and Data analysis: Link to heading Matplotlib: Save images in high quality (EPS, PDF) Matplotlib: Prevent plot labels from getting cut off when saving them Matplotlib: How to put the legend out of the plot Matplotlib: Reverse the order of legend Matplotlib: Read the data and plotting with multiple markers Matplotlib: Using matplotlib in jupyter notebooks — comparing methods and some tips (%matplotlib \u0026lt;\u0026gt;) python re: Non-capturing groups pip 10 and apt: How to avoid “Cannot uninstall X” errors for distutils packages scipy \u0026amp; scikit-learn: How to calculate Silhouette Score of the scipy\u0026rsquo;s fcluster using scikit-learn silhouette score?",
+      "keywords": ["troubleshooting", "programming", "yak shaving"]
+    }
+    
+    </script>
+</head>
+
+
+
+
+
+
+<body class="preload-transitions colorscheme-auto">
+  
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+  <main class="wrapper">
+    <nav class="navigation">
+  <section class="container">
+    
+    <a class="navigation-title" href="http://localhost:1313/es-co/">
+      Leandro Ordóñez Ante
+    </a>
+    
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa-solid fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="http://localhost:1313/es-co/ideas/">Scrapbook</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="http://localhost:1313/es-co/publications/">Publicaciones</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="http://localhost:1313/es-co/phd/">PhD</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="http://localhost:1313/es-co/about/">Sobre mi</a>
+            </li>
+          
+        
+        
+          
+          
+          
+            
+              
+                <li class="navigation-item menu-separator">
+                  <span>|</span>
+                </li>
+                
+              
+              <li class="navigation-item">
+                <a href="http://localhost:1313/ideas/common-procedures-and-troubleshooting/">English</a>
+              </li>
+            
+          
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+    <div class="content">
+      
+  <section class="container post">
+    <article>
+      <header>
+        <div class="post-title">
+          <h1 class="title">
+            <a class="title-link" href="http://localhost:1313/es-co/ideas/common-procedures-and-troubleshooting/">
+              Common procedures and troubleshooting
+            </a>
+          </h1>
+        </div>
+        <div class="post-meta">
+          <div class="date">
+            <span class="posted-on">
+              <i class="fa-solid fa-calendar" aria-hidden="true"></i>
+              <time datetime="2019-11-11T20:29:41&#43;01:00">
+                noviembre 11, 2019
+              </time>
+            </span>
+            <span class="reading-time">
+              <i class="fa-solid fa-clock" aria-hidden="true"></i>
+              4-minute read
+            </span>
+          </div>
+          
+          <div class="categories">
+  <i class="fa-solid fa-folder" aria-hidden="true"></i>
+    <a href="http://localhost:1313/es-co/categories/programming/">Programming</a>
+      <span class="separator">•</span>
+    <a href="http://localhost:1313/es-co/categories/data-management/">Data Management</a>
+      <span class="separator">•</span>
+    <a href="http://localhost:1313/es-co/categories/research/">Research</a></div>
+
+          <div class="tags">
+  <i class="fa-solid fa-tag" aria-hidden="true"></i>
+    <span class="tag">
+      <a href="http://localhost:1313/es-co/tags/troubleshooting/">Troubleshooting</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="http://localhost:1313/es-co/tags/programming/">Programming</a>
+    </span>
+      <span class="separator">•</span>
+    <span class="tag">
+      <a href="http://localhost:1313/es-co/tags/yak-shaving/">Yak Shaving</a>
+    </span></div>
+
+        </div>
+      </header>
+
+      <div class="post-content">
+        
+        <figure><img src="http://localhost:1313/images/ideas/yak-shaving-min.jpg"
+    alt="Photo by Lieve Ransijn on Unsplash"><figcaption>
+      <p>Photo by <a href="https://unsplash.com/@lievemax"  class="external-link" target="_blank" rel="noopener">Lieve Ransijn</a> on <a href="https://unsplash.com/photos/FsJ_vzp_NI4"  class="external-link" target="_blank" rel="noopener">Unsplash</a></p>
+    </figcaption>
+</figure>
+
+<p>This is a &ldquo;<em>curated</em>&rdquo; list of pointers I have found handy during my long coding sessions (a major part of which I still spend <a href="https://www.techopedia.com/definition/15511/yak-shaving"  class="external-link" target="_blank" rel="noopener">yak shaving</a> someone else&rsquo;s code).</p>
+<h3 id="angular-related">
+  Angular related:
+  <a class="heading-link" href="#angular-related">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<ul>
+<li><a href="https://medium.com/engineering-on-the-incline/reloading-current-route-on-click-angular-5-1a1bfc740ab2"  class="external-link" target="_blank" rel="noopener">Reloading current route in Angular 5 / Angular 6 (reload component when clicking browser&rsquo;s back button)</a></li>
+<li><a href="https://stackblitz.com/edit/angular-material2-table?file=app%2Fapp.component.ts"  class="external-link" target="_blank" rel="noopener">Angular material datatable example (sortable, selectable and filterable)</a></li>
+<li><a href="https://stackblitz.com/edit/angular-tyfg2z?file=app%2Fapp.component.ts"  class="external-link" target="_blank" rel="noopener">Angular material checkbox + forms example</a></li>
+<li><a href="https://jeffshamley.com/blogs/how-block-robots-crawling-your-angular-application"  class="external-link" target="_blank" rel="noopener">How to prevent robots from crawling an Angular application</a></li>
+<li><a href="https://www.npmjs.com/package/ng-number-picker"  class="external-link" target="_blank" rel="noopener"><code>ng-number-picker</code></a></li>
+</ul>
+<h3 id="python-dev-and-data-analysis">
+  Python Dev and Data analysis:
+  <a class="heading-link" href="#python-dev-and-data-analysis">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<ul>
+<li><a href="https://stackoverflow.com/questions/16183462/saving-images-in-python-at-a-very-high-quality"  class="external-link" target="_blank" rel="noopener"><code>Matplotlib</code>: Save images in high quality (EPS, PDF)</a></li>
+<li><a href="https://stackoverflow.com/questions/21288062/second-y-axis-label-getting-cut-off/21288063"  class="external-link" target="_blank" rel="noopener"><code>Matplotlib</code>: Prevent plot labels from getting cut off when saving them</a></li>
+<li><a href="https://stackoverflow.com/a/4701285/2412831"  class="external-link" target="_blank" rel="noopener"><code>Matplotlib</code>: How to put the legend out of the plot</a></li>
+<li><a href="https://stackoverflow.com/q/34576059/2412831"  class="external-link" target="_blank" rel="noopener"><code>Matplotlib</code>: Reverse the order of legend</a></li>
+<li><a href="https://pydatascience.org/2017/12/05/read-the-data-and-plotting-with-multiple-markers/"  class="external-link" target="_blank" rel="noopener"><code>Matplotlib</code>: Read the data and plotting with multiple markers</a></li>
+<li><a href="https://medium.com/@1522933668924/using-matplotlib-in-jupyter-notebooks-comparing-methods-and-some-tips-python-c38e85b40ba1"  class="external-link" target="_blank" rel="noopener"><code>Matplotlib</code>: Using matplotlib in jupyter notebooks — comparing methods and some tips (<code>%matplotlib &lt;&gt;</code>)</a></li>
+<li><a href="https://stackoverflow.com/questions/18425386/re-findall-not-returning-full-match"  class="external-link" target="_blank" rel="noopener"><code>python re</code>: Non-capturing groups</a></li>
+<li><a href="https://stackoverflow.com/a/50396798/2412831"  class="external-link" target="_blank" rel="noopener"><code>pip 10 and apt</code>: How to avoid “Cannot uninstall X” errors for distutils packages
+</a></li>
+<li><a href="https://stackoverflow.com/a/28187426/2412831"  class="external-link" target="_blank" rel="noopener"><code>scipy &amp; scikit-learn</code>: How to calculate Silhouette Score of the scipy&rsquo;s fcluster using scikit-learn silhouette score?</a></li>
+<li><a href="https://stackoverflow.com/a/29334672/2412831"  class="external-link" target="_blank" rel="noopener"><code>pandas</code>: How to read a large csv file in chunks</a></li>
+<li><a href="https://www.kaggle.com/gvyshnya/parallel-operations-over-a-pandas-df"  class="external-link" target="_blank" rel="noopener"><code>pandas</code>: Parallel operations over a pandas DataFrame</a></li>
+<li><a href="https://stackoverflow.com/a/22477520/2412831"  class="external-link" target="_blank" rel="noopener"><code>pandas</code>: Random selection per group</a></li>
+<li><a href="https://deparkes.co.uk/2016/06/10/folium-map-tiles/"  class="external-link" target="_blank" rel="noopener"><code>folium</code>: Map Tiles</a></li>
+<li><a href="https://nbviewer.jupyter.org/github/python-visualization/folium/tree/master/examples/"  class="external-link" target="_blank" rel="noopener"><code>folium</code>: Gallery of examples</a></li>
+<li><a href="https://nbviewer.jupyter.org/github/python-visualization/folium/blob/master/examples/MarkerCluster.ipynb"  class="external-link" target="_blank" rel="noopener"><code>folium</code>: Marker cluster</a></li>
+<li><a href="https://stackoverflow.com/q/38899190/2412831"  class="external-link" target="_blank" rel="noopener"><code>GeoPandas</code>: Label Polygons (see second answer)</a></li>
+<li><a href="https://medium.com/@achm.firmansyah/an-approach-for-checking-overlaps-and-gaps-in-polygons-using-geopandas-ebd6606e7f70"  class="external-link" target="_blank" rel="noopener"><code>GeoPandas</code>: An Approach for Checking Overlaps and Gaps in Polygons using Geopandas</a></li>
+<li><a href="https://geoffboeing.com/2016/10/r-tree-spatial-index-python/"  class="external-link" target="_blank" rel="noopener"><code>GeoPandas</code>: R-tree Spatial Indexing with Python (bounding box matches vs exact polygon matches)</a></li>
+<li><a href="https://automating-gis-processes.github.io/2017/lessons/L3/nearest-neighbour.html"  class="external-link" target="_blank" rel="noopener"><code>GeoPandas</code>: Nearest Neighbour Analysis (Nearest polygon to point)</a></li>
+<li><a href="https://github.com/jupyter-widgets/ipyleaflet/issues/290"  class="external-link" target="_blank" rel="noopener"><code>ipyleaflet</code>: Get coordinates out of map drawings</a></li>
+<li><a href="https://stackoverflow.com/a/40941511/2412831"  class="external-link" target="_blank" rel="noopener"><code>Jupyter</code> How to check the source code of a module</a></li>
+<li><a href="https://stackoverflow.com/q/20803878/2412831"  class="external-link" target="_blank" rel="noopener"><code>Geoalchemy2</code>: query all users within X meteres</a></li>
+<li><a href="https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.io.json.json_normalize.html"  class="external-link" target="_blank" rel="noopener"><code>pandas</code>: Normalize semi-structured JSON data into a flat table</a></li>
+<li><a href="https://stackoverflow.com/a/22002048/2412831"  class="external-link" target="_blank" rel="noopener">Streaming data from Postgres into Python</a></li>
+<li><a href="https://blog.tafkas.net/2018/09/28/creating-a-grid-based-on-geohashes/"  class="external-link" target="_blank" rel="noopener">Creating a grid based on GeoHashes</a></li>
+<li><a href="https://github.com/wannesm/dtaidistance"  class="external-link" target="_blank" rel="noopener">Time series distances: Dynamic Time Warping (DTW) </a></li>
+<li><a href="https://medium.com/@smirnov.am/running-flask-in-production-with-docker-1932c88f14d0"  class="external-link" target="_blank" rel="noopener">Running <code>Flask</code> in production with Docker</a></li>
+<li><a href="https://scotch.io/tutorials/build-a-restful-api-with-flask-the-tdd-way"  class="external-link" target="_blank" rel="noopener">Build a RESTful API with Flask – The TDD Way</a></li>
+</ul>
+<h3 id="docker--kubernetes-related">
+  Docker &amp; Kubernetes related:
+  <a class="heading-link" href="#docker--kubernetes-related">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<ul>
+<li><a href="https://www.digitalocean.com/community/tutorials/how-to-build-a-node-js-application-with-docker"  class="external-link" target="_blank" rel="noopener">How To Build a Node.js Application with Docker</a></li>
+<li><a href="https://stackoverflow.com/a/35689633/2412831"  class="external-link" target="_blank" rel="noopener">Starting a shell in the Docker Alpine container</a></li>
+<li><a href="https://www.digitalocean.com/community/tutorials/how-to-share-data-between-docker-containers#step-1-%E2%80%94-creating-an-independent-volume"  class="external-link" target="_blank" rel="noopener">How To Share Data between Docker Containers</a></li>
+<li><a href="https://www.andrewmahon.info/blog/docker-compose-data-science/"  class="external-link" target="_blank" rel="noopener">Docker Compose for Data Science (Jupyter + PostgreSQL)</a></li>
+<li><a href="https://github.com/kubernetes/kubernetes/issues/41536#issuecomment-280354231"  class="external-link" target="_blank" rel="noopener"><code>kubectl</code>: Pull docker image from private repository</a></li>
+<li><a href="https://linuxhint.com/run_postgresql_docker_compose/"  class="external-link" target="_blank" rel="noopener">Running <code>PostgreSQL</code> using Docker Compose (with persistent volume)</a></li>
+<li><a href="https://stackoverflow.com/a/30064175/2412831"  class="external-link" target="_blank" rel="noopener">Using <code>docker-compose</code>, how to execute multiple commands</a></li>
+<li><a href="https://angristan.xyz/build-push-docker-images-gitlab-ci/"  class="external-link" target="_blank" rel="noopener">Automatically build and push Docker images using GitLab CI</a></li>
+<li><a href="https://kubernetes.io/docs/tasks/configure-pod-container/pull-image-private-registry/"  class="external-link" target="_blank" rel="noopener"><code>k8s</code>: Pull an Image from a Private Registry</a></li>
+<li><a href="https://kubernetes.io/docs/tasks/configure-pod-container/configure-persistent-volume-storage/"  class="external-link" target="_blank" rel="noopener"><code>k8s</code>: Configure persistent volume storage</a></li>
+<li><a href="https://jaas.ai/kubernetes-core/bundle/815"  class="external-link" target="_blank" rel="noopener"><code>K8s</code>, <code>juju</code>: Kubernetes Core bundle</a></li>
+<li><a href="https://github.com/charmed-kubernetes/bundle/issues/357#issuecomment-316542831"  class="external-link" target="_blank" rel="noopener"><code>K8S</code>, <code>juju</code>: Restart K8s related services manually (for the juju bundle)</a></li>
+<li><a href="https://medium.com/@clouddev.guru/how-to-fix-kubernetes-namespace-deleting-stuck-in-terminating-state-5ed75792647e"  class="external-link" target="_blank" rel="noopener"><code>K8S</code>: How to fix — Kubernetes <code>namespace</code> deleting stuck in Terminating state</a></li>
+<li><a href="https://medium.com/better-programming/build-push-to-docker-with-maven-eea7c4b8cfa2"  class="external-link" target="_blank" rel="noopener">Build and Push to Docker With Maven</a></li>
+</ul>
+<h3 id="git-related">
+  Git related
+  <a class="heading-link" href="#git-related">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<ul>
+<li><a href="https://stackoverflow.com/a/16162000/2412831"  class="external-link" target="_blank" rel="noopener">Remove submodule</a></li>
+</ul>
+<h3 id="hadoop-related">
+  Hadoop related:
+  <a class="heading-link" href="#hadoop-related">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<h4 id="decommisioning-hadoop-datanodes">
+  Decommisioning Hadoop datanodes:
+  <a class="heading-link" href="#decommisioning-hadoop-datanodes">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h4>
+<ul>
+<li><a href="https://www.ibm.com/support/knowledgecenter/en/SSPT3X_4.1.0/com.ibm.swg.im.infosphere.biginsights.admin.doc/doc/iop_decom_nodes.html"  class="external-link" target="_blank" rel="noopener">Decommissioning slave nodes - IBM Knowledge Center</a></li>
+<li><a href="https://www.cloudera.com/documentation/enterprise/5-9-x/topics/cdh_ig_decommision_datanodes.html"  class="external-link" target="_blank" rel="noopener">Decommissioning DataNodes Using the Command Line - Cloudera</a></li>
+</ul>
+<h4 id="fix-connection-issues-between-the-namenode-and-datanodes">
+  Fix connection issues between the namenode and datanodes:
+  <a class="heading-link" href="#fix-connection-issues-between-the-namenode-and-datanodes">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h4>
+<ul>
+<li><a href="https://wiki.apache.org/hadoop/ConnectionRefused"  class="external-link" target="_blank" rel="noopener"><code>Connection Refused</code></a></li>
+</ul>
+<h3 id="java-related">
+  Java related:
+  <a class="heading-link" href="#java-related">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<ul>
+<li><a href="https://stackoverflow.com/a/41347321/2412831"  class="external-link" target="_blank" rel="noopener"><code>maven</code> Accessing resource files inside a jar: Java properties file in jar not found when running jar</a></li>
+<li><a href="https://medium.com/@aruny/embedding-jetty-server-with-jersey-as-restful-container-with-cors-a3ea3c5381c9"  class="external-link" target="_blank" rel="noopener"><code>Jetty</code>, <code>REST</code>, <code>CORS</code>: Embedding Jetty Server with Jersey as RESTful container with CORS</a></li>
+</ul>
+<h3 id="kafka-related">
+  KafKa related:
+  <a class="heading-link" href="#kafka-related">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<ul>
+<li><a href="https://cwiki.apache.org/confluence/display/KAFKA/Kafka&#43;Stream&#43;Usage&#43;Patterns"  class="external-link" target="_blank" rel="noopener"><code>Kafka Streams</code>: How to compute an (windowed) average?</a></li>
+<li><a href="https://kafka.apache.org/23/documentation/streams/tutorial"  class="external-link" target="_blank" rel="noopener"><code>Kafka Streams</code>: Write a Kafka Streams Application</a></li>
+<li><a href="https://github.com/bryanyang0528/ksql-python"  class="external-link" target="_blank" rel="noopener"><code>KSQL</code>: <code>ksql-python</code> A python wrapper for the KSQL REST API</a></li>
+</ul>
+<h3 id="latex-related">
+  LaTeX related:
+  <a class="heading-link" href="#latex-related">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<ul>
+<li><a href="https://tex.stackexchange.com/a/9068"  class="external-link" target="_blank" rel="noopener">Large braces for specifying values of variables by condition</a></li>
+</ul>
+<h3 id="postgresql-related">
+  PostgreSQL related:
+  <a class="heading-link" href="#postgresql-related">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<ul>
+<li><a href="https://www.citusdata.com/blog/2018/03/06/postgres-planner-and-its-usage-of-statistics/"  class="external-link" target="_blank" rel="noopener"><code>CREATE STATISTICS</code>: The Postgres 10 feature you didn&rsquo;t know about</a></li>
+<li><a href="http://tatiyants.com/pev/"  class="external-link" target="_blank" rel="noopener">PostgreSQL <code>Explain</code> Visualizer</a></li>
+<li><a href="http://www.interdb.jp/pg/pgsql03.html"  class="external-link" target="_blank" rel="noopener">The Internals of PostgreSQL: Ch. 3 Query Processing (See subsection 3.2.2.2 on <code>run cost</code> and <code>selectivity</code>)</a></li>
+<li><a href="https://stackoverflow.com/a/42118080/2412831"  class="external-link" target="_blank" rel="noopener">Using <code>date_trunc</code> to group by hour with a timestamp field?</a></li>
+<li><a href="https://stackoverflow.com/questions/12343984/insert-trigger-to-update-another-table-using-postgresql"  class="external-link" target="_blank" rel="noopener">Insert trigger to Update another table using PostgreSQL</a></li>
+</ul>
+<h3 id="spark-related">
+  Spark related:
+  <a class="heading-link" href="#spark-related">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<ul>
+<li><a href="https://community.hortonworks.com/questions/144181/num-executors-and-executor-memory-in-spark.html"  class="external-link" target="_blank" rel="noopener">On why large executor memory does not imply better performance</a></li>
+<li><a href="https://community.hortonworks.com/questions/144181/num-executors-and-executor-memory-in-spark.html"  class="external-link" target="_blank" rel="noopener">On the <code>spark.sql.autoBroadcastJoinThreshold</code> setting - SparkSQL</a></li>
+<li><a href="https://sujithjay.com/spark-sql/2018/06/28/Shuffle-Hash-and-Sort-Merge-Joins-in-Apache-Spark/"  class="external-link" target="_blank" rel="noopener">Shuffle Hash and Sort Merge Joins in Apache Spark</a></li>
+<li><a href="https://sujithjay.com/spark-sql/2018/02/17/Broadcast-Hash-Joins-in-Apache-Spark/"  class="external-link" target="_blank" rel="noopener">Broadcast Hash Joins in Apache Spark</a></li>
+<li><a href="https://sujithjay.com/2018/07/24/Understanding-Apache-Spark-on-YARN/"  class="external-link" target="_blank" rel="noopener">Understanding Apache Spark on YARN</a></li>
+<li><a href="https://stackoverflow.com/a/41027619/2412831"  class="external-link" target="_blank" rel="noopener">Pyspark: Split multiple array columns into rows (<code>explode</code> method)</a></li>
+<li><a href="https://stackoverflow.com/a/38189294/2412831"  class="external-link" target="_blank" rel="noopener">Convert comma separated string to array in pyspark dataframe</a></li>
+</ul>
+<h3 id="ubuntu-related">
+  Ubuntu related:
+  <a class="heading-link" href="#ubuntu-related">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<ul>
+<li><a href="https://www.digitalocean.com/community/tutorials/how-to-add-swap-space-on-ubuntu-18-04"  class="external-link" target="_blank" rel="noopener">How To Add Swap Space on Ubuntu 18.04</a></li>
+<li><a href="https://help.ubuntu.com/community/Mount/USB"  class="external-link" target="_blank" rel="noopener">Disable automount</a></li>
+</ul>
+
+      </div>
+
+
+      <footer>
+        
+
+
+        <div id="disqus_thread"></div>
+<script>
+  window.disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "personal-site-of-leandro-ordonez" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+    
+    document.addEventListener('themeChanged', function (e) { 
+        if (document.readyState == 'complete') {
+          DISQUS.reset({ reload: true, config: disqus_config });
+        }
+    });
+</script>
+        
+        
+        
+        
+
+        
+        
+      </footer>
+    </article>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.css"
+    integrity="sha384-vKruj+a13U8yHIkAyGgK1J3ArTLzrFGBbBc0tDp4ad/EyewESeXE/Iv67Aj8gKZ0" crossorigin="anonymous">
+  
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/katex.min.js"
+    integrity="sha384-PwRUT/YqbnEjkZO0zZxNqcxACrXe+j766U2amXcgMg5457rve2Y7I6ZJSm2A0mS4" crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.4/dist/contrib/auto-render.min.js"
+    integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous"
+    onload="renderMathInElement(document.body,
+      {
+        delimiters: [
+          {left: '$$', right: '$$', display:true},
+          {left: '$', right: '$', display:false},
+          {left: '\\(', right: '\\)', display: false},
+          {left: '\\[', right: '\\]', display: true}
+        ]
+      }
+    );"></script>
+  </section>
+
+    </div>
+
+    <footer class="footer">
+  <section class="container">
+    ©
+    
+    2024
+     Leandro Ordóñez Ante 
+    ·
+    
+    Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/" target="_blank" rel="noopener">Coder</a>.
+    
+  </section>
+</footer>
+
+  </main>
+
+  
+
+  
+  
+  <script src="http://localhost:1313/js/coder.js"></script>
+  
+
+  
+
+  
+
+
+  
+  
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-7HZJ3L2M6V"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-7HZJ3L2M6V');
+</script>
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</body>
+
+</html>

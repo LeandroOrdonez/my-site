@@ -1,1 +1,82 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Tags on Leandro Ordóñez Ante</title><link>https://leandro.ordonez.tech/tags/</link><description>Recent content in Tags on Leandro Ordóñez Ante</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sun, 05 Apr 2020 14:10:33 +0100</lastBuildDate><atom:link href="https://leandro.ordonez.tech/tags/index.xml" rel="self" type="application/rss+xml"/><item><title>data</title><link>https://leandro.ordonez.tech/tags/data/</link><pubDate>Sun, 05 Apr 2020 14:10:33 +0100</pubDate><guid>https://leandro.ordonez.tech/tags/data/</guid><description/></item><item><title>iot</title><link>https://leandro.ordonez.tech/tags/iot/</link><pubDate>Sun, 05 Apr 2020 14:10:33 +0100</pubDate><guid>https://leandro.ordonez.tech/tags/iot/</guid><description/></item><item><title>kafka</title><link>https://leandro.ordonez.tech/tags/kafka/</link><pubDate>Sun, 05 Apr 2020 14:10:33 +0100</pubDate><guid>https://leandro.ordonez.tech/tags/kafka/</guid><description/></item><item><title>querying</title><link>https://leandro.ordonez.tech/tags/querying/</link><pubDate>Sun, 05 Apr 2020 14:10:33 +0100</pubDate><guid>https://leandro.ordonez.tech/tags/querying/</guid><description/></item><item><title>sensor</title><link>https://leandro.ordonez.tech/tags/sensor/</link><pubDate>Sun, 05 Apr 2020 14:10:33 +0100</pubDate><guid>https://leandro.ordonez.tech/tags/sensor/</guid><description/></item><item><title>streams</title><link>https://leandro.ordonez.tech/tags/streams/</link><pubDate>Sun, 05 Apr 2020 14:10:33 +0100</pubDate><guid>https://leandro.ordonez.tech/tags/streams/</guid><description/></item><item><title>programming</title><link>https://leandro.ordonez.tech/tags/programming/</link><pubDate>Mon, 11 Nov 2019 20:29:41 +0100</pubDate><guid>https://leandro.ordonez.tech/tags/programming/</guid><description/></item><item><title>troubleshooting</title><link>https://leandro.ordonez.tech/tags/troubleshooting/</link><pubDate>Mon, 11 Nov 2019 20:29:41 +0100</pubDate><guid>https://leandro.ordonez.tech/tags/troubleshooting/</guid><description/></item><item><title>yak shaving</title><link>https://leandro.ordonez.tech/tags/yak-shaving/</link><pubDate>Mon, 11 Nov 2019 20:29:41 +0100</pubDate><guid>https://leandro.ordonez.tech/tags/yak-shaving/</guid><description/></item><item><title>aggregation</title><link>https://leandro.ordonez.tech/tags/aggregation/</link><pubDate>Thu, 17 Oct 2019 10:45:27 +0200</pubDate><guid>https://leandro.ordonez.tech/tags/aggregation/</guid><description/></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Leandro Ordóñez Ante</title>
+    <link>http://localhost:1313/tags/</link>
+    <description>Recent content in Tags on Leandro Ordóñez Ante</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 05 Apr 2020 14:10:33 +0100</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Data</title>
+      <link>http://localhost:1313/tags/data/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/data/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Iot</title>
+      <link>http://localhost:1313/tags/iot/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/iot/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Kafka</title>
+      <link>http://localhost:1313/tags/kafka/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/kafka/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Querying</title>
+      <link>http://localhost:1313/tags/querying/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/querying/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Sensor</title>
+      <link>http://localhost:1313/tags/sensor/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/sensor/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Streams</title>
+      <link>http://localhost:1313/tags/streams/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/streams/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Programming</title>
+      <link>http://localhost:1313/tags/programming/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/programming/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Troubleshooting</title>
+      <link>http://localhost:1313/tags/troubleshooting/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/troubleshooting/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Yak Shaving</title>
+      <link>http://localhost:1313/tags/yak-shaving/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/yak-shaving/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Aggregation</title>
+      <link>http://localhost:1313/tags/aggregation/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/tags/aggregation/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

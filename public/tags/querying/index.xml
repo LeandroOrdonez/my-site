@@ -1,41 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>querying on Leandro Ordóñez Ante</title><link>https://leandro.ordonez.tech/tags/querying/</link><description>Recent content in querying on Leandro Ordóñez Ante</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sun, 05 Apr 2020 14:10:33 +0100</lastBuildDate><atom:link href="https://leandro.ordonez.tech/tags/querying/index.xml" rel="self" type="application/rss+xml"/><item><title>Interactive querying for spatiotemporal data with Kafka Streams</title><link>https://leandro.ordonez.tech/ideas/interactive-querying-kafka-streams/</link><pubDate>Sun, 05 Apr 2020 14:10:33 +0100</pubDate><guid>https://leandro.ordonez.tech/ideas/interactive-querying-kafka-streams/</guid><description>&lt;figure class="center">&lt;img src="https://imgs.xkcd.com/comics/data_pipeline.png"
-alt="Data Pipeline by xkcd.com"/>&lt;figcaption>
-&lt;p>Data Pipeline by &lt;a href="https://xkcd.com/2054/">xkcd.com&lt;/a>&lt;/p>
-&lt;/figcaption>
-&lt;/figure>
-&lt;p>In a &lt;a href="https://leandro.ordonez.tech/ideas/continuous-aggregation-kafka-streams/">previous post&lt;/a> we explored a method for performing continuous aggregation on a stream of sensor readings using the Kafka Streams DSL. This time I want to share with you &lt;a href="https://github.com/LeandroOrdonez/kafka-streams-pipeline">&lt;code>kafka-streams-pipeline&lt;/code>&lt;/a>, a Kafka Streams application that leverages said continuous aggregation method and defines a complete stream processing pipeline, which enables querying the continuous data summaries stored into a materialized &lt;code>KTable&lt;/code>, by incorporating the spatial and temporal dimensions of the sensor data to the analysis. To understand how this application works, let’s first get back to the &lt;code>temperature-readings&lt;/code> topic from the previous post. In this topic the feed of temperature measurements made by multiple sensors is being posted. The following is an excerpt of the measurements registered in &lt;code>temperature-readings&lt;/code>:&lt;/p>
-&lt;script type="application/javascript" src="https://gist.github.com/LeandroOrdonez/04eb02301d15f9af942cf76faa9e99c3.js?file=temperature_readings.json">&lt;/script>
-&lt;p>Each JSON object from the list above represents a temperature reading taken by a given sensor. Notice the &lt;code>timestamp&lt;/code> and &lt;code>geohash&lt;/code> fields, which hold the information about the time and the location of each measurement. In case you are not familiar with the concept of geohashing, it is basically an encoding mechanism created by Gustavo Niemeyer in 2008, that allows reducing a two-dimensional longitude, latitude pair into a single alphanumeric string (in base32 format), where each subsequent character adds precision to the location. So, for instance, the geohash &lt;code>u155mz82dv33&lt;/code> corresponds to the longitude, latitude pair &lt;code>(4.47189873, 51.23760204)&lt;/code>. The idea is to enable interactive (low-latency) queries that support typical visual exploratory analysis tasks on top of the spatiotemporal data being posted to &lt;code>temperature-readings&lt;/code>, by leveraging some appealing features of geohashes such as its inherent hierarchical structure, which recursively subdivides geospatial areas into 32 cells or tiles at each level (character)&lt;sup id="fnref:1">&lt;a href="#fn:1" class="footnote-ref" role="doc-noteref">1&lt;/a>&lt;/sup>, as you can see in the diagram below.&lt;/p>
-&lt;figure class="img60">&lt;img src="https://leandro.ordonez.tech/images/ideas/geohash.jpg"
-alt="Geohashes by Movable Type Scripts"/>&lt;figcaption>
-&lt;p>Geohashes by &lt;a href="https://www.movable-type.co.uk/scripts/geohash.html">Movable Type Scripts&lt;/a>&lt;/p>
-&lt;/figcaption>
-&lt;/figure>
-&lt;p>This way, by truncating the &lt;code>geohash&lt;/code> of each of the incoming readings to a certain number characters, we can set up a grid for partitioning the temperature data in the spatial dimension, and perform continuous aggregation on each of the resulting partitions. The same principle can be applied in the temporal dimension by truncating the &lt;code>timestamp&lt;/code> of each reading to a certain unit of time, laying out a temporal partitioning schema that arranges data into time bins of a fixed width (for instance, &lt;em>minutely&lt;/em>, &lt;em>hourly&lt;/em>, or &lt;em>daily&lt;/em> bins).&lt;/p>
-&lt;p>The application focuses on serving two types of queries: (&lt;em>1&lt;/em>) &lt;strong>Historical queries&lt;/strong>, namely those asking how the temperature has evolved along a given geospatial region, over a certain period of time; and (&lt;em>2&lt;/em>) &lt;strong>Snapshot queries&lt;/strong> which provide a time-slice view of the temperature for a specific moment in time.&lt;/p>
-&lt;figure class="center">&lt;img src="https://leandro.ordonez.tech/images/ideas/historical-snapshot-queries.jpg"
-alt="Historical and Snapshot queries"/>&lt;figcaption>
-&lt;p>Historical and Snapshot queries&lt;/p>
-&lt;/figcaption>
-&lt;/figure>
-&lt;p>Below you can see a schematics showing the structure of the stream processing pipeline at the core of the application discussed in this post.&lt;/p>
-&lt;figure class="img60">&lt;img src="https://leandro.ordonez.tech/images/ideas/architecture-kstreams-querying.jpg"
-alt="Stream processing pipeline for interactive querying with Kafka Streams"/>&lt;figcaption>
-&lt;p>Stream processing pipeline for interactive querying with Kafka Streams&lt;/p>
-&lt;/figcaption>
-&lt;/figure>
-&lt;p>As you can see in the diagram above, it is possible to deploy multiple stream processors, each one hosting an instance of the state store where one fraction of the global application state is persisted. In consequence, in this distributed setup queries are computed by combining the result sets obtained from each processor:&lt;/p>
-&lt;figure class="center">&lt;img src="https://leandro.ordonez.tech/images/ideas/dist-query-processing.jpg"
-alt="Distributed query resolution"/>&lt;figcaption>
-&lt;p>Distributed query resolution&lt;/p>
-&lt;/figcaption>
-&lt;/figure>
-&lt;p>The source code of this application is available on &lt;a href="https://github.com/LeandroOrdonez/kafka-streams-pipeline">github&lt;/a>. You can deploy the entire pipeline (including an application for generating syntethic temperature values, discussed in a &lt;a href="https://leandro.ordonez.tech/ideas/mocking-sensor-data-generator/">recent post&lt;/a>) on your local machine using Docker. Just clone the repository and follow the instructions on the &lt;code>README.md&lt;/code> file. Hope you find it useful! :)&lt;/p>
-&lt;section class="footnotes" role="doc-endnotes">
-&lt;hr>
-&lt;ol>
-&lt;li id="fn:1" role="doc-endnote">
-&lt;p>&lt;a href="https://www.movable-type.co.uk/scripts/geohash.html">Here&lt;/a> you can find a more detailed explanation on geohashes.&amp;#160;&lt;a href="#fnref:1" class="footnote-backref" role="doc-backlink">&amp;#x21a9;&amp;#xfe0e;&lt;/a>&lt;/p>
-&lt;/li>
-&lt;/ol>
-&lt;/section></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Querying on Leandro Ordóñez Ante</title>
+    <link>http://localhost:1313/tags/querying/</link>
+    <description>Recent content in Querying on Leandro Ordóñez Ante</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 05 Apr 2020 14:10:33 +0100</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/querying/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Interactive querying for spatiotemporal data with Kafka Streams</title>
+      <link>http://localhost:1313/ideas/interactive-querying-kafka-streams/</link>
+      <pubDate>Sun, 05 Apr 2020 14:10:33 +0100</pubDate>
+      <guid>http://localhost:1313/ideas/interactive-querying-kafka-streams/</guid>
+      <description>Data Pipeline by xkcd.com&#xA;In a previous post we explored a method for performing continuous aggregation on a stream of sensor readings using the Kafka Streams DSL. This time I want to share with you kafka-streams-pipeline, a Kafka Streams application that leverages said continuous aggregation method and defines a complete stream processing pipeline, which enables querying the continuous data summaries stored into a materialized KTable, by incorporating the spatial and temporal dimensions of the sensor data to the analysis.</description>
+    </item>
+  </channel>
+</rss>
