@@ -1,29 +1,25 @@
 ---
-title: "About me"
-date: 2019-10-11T13:44:57+02:00
+title: "About Me"
+date: 2025-09-04T09:00:00+02:00
 draft: false
 ---
 
-Hello! I'm Leandro Ordóñez, a data engineer and scientist with a Ph.D. in Computer Sciences Engineering from [UGent's IDLab](https://idlab.technology/). My passion lies in unlocking the potential of vast, distributed datasets, making them accessible and actionable for businesses and researchers alike.
+Hi, I’m Leandro Ordóñez. I am a data engineer and scientist passionate about turning complex datasets into meaningful insights and smarter decisions. I hold a Ph.D. in Computer Sciences Engineering from [UGent’s IDLab](https://idlab.technology/), where I explored cutting-edge research in distributed data systems.
 
-My journey has taken me from the cutting-edge research environment of IDLab to the dynamic world of tech entrepreneurship. As co-founder of [BitBang Company](https://thebitbang.company), I've had the privilege of helping businesses across South and Central America harness the transformative power of Big Data and Analytics.
+My career has taken me from academia to entrepreneurship to applied industry innovation. As co-founder of [BitBang Company](https://thebitbang.company), I helped organizations across South and Central America harness the power of Big Data and Analytics. Today I work as a Data Science Engineer at [Yazzoom](https://yazzoom.com), a Belgian scale-up in Ghent, where we build AI-driven solutions that optimize industrial processes. My focus is on developing real-time data pipelines, predictive models, and smart software that reduce energy consumption, minimize waste, and enable more sustainable operations.
 
-Since April 2022, I've been applying my expertise as a Data Science Engineer at [Yazzoom](https://yazzoom.com), a Belgian scale-up based in Ghent. At Yazzoom, we're at the forefront of leveraging advanced data analytics and artificial intelligence to revolutionize industrial processes, delivering immediate value to our customers while contributing to a more sustainable future. My work involves developing smart software solutions that process real-time sensor data and historical big data, optimizing control systems, and providing data analytics services. Through our AI-for-Industries software product Yanomaly and tailored solutions, we're helping companies across various industries reduce energy consumption, minimize raw material usage, and eliminate waste.
+## My Toolkit
 
-## My toolkit
+I combine academic rigor with hands-on engineering to deliver scalable solutions:
 
-My expertise is a fusion of academic rigor and practical application, spanning:
+- **Data Science & Engineering**: Building data pipelines and ML models with `scikit-learn`, `Spark`, `Kafka`, `Kubernetes`.
+- **Software Development**: Writing clean, efficient code in `Python`, `JavaScript`, `Java`; optimizing relational and NoSQL databases.
+- **Innovation & Research**: Exploring new approaches in Big Data, Web Technologies, Semantics, and Distributed Systems.
 
-- **Data Science & Engineering:** Mastering tools like `scikit-learn`, `Spark`, `Kafka`, and `Kubernetes` to build robust, scalable data pipelines and ML models.
-- **Software Development:** Crafting efficient solutions in `Python`, `Java`, and `JavaScript`, with a keen eye for database optimization across `PostgreSQL`, `MySQL`, and `MongoDB`.
-- **Research & Innovation:** Pushing the boundaries in Big Data, Web Technologies, Semantics, and Distributed Systems.
+## Let’s Connect
 
-## Let's connect!
+I enjoy collaborating on projects that push the boundaries of what is possible with data, from infrastructure optimization to advanced ML solutions. If you would like to exchange ideas or explore potential collaborations, feel free to reach out:
 
-I'm always eager to collaborate on projects that push the boundaries of what's possible with data. Whether you're looking to optimize your data infrastructure, implement cutting-edge ML solutions, or discuss the latest trends in data science.
-
-Reach out and let's explore how we can transform data into actionable insights for your business or research:
-
-- 🐦 Twitter: [@OrdonezLeandro](http://twitter.com/OrdonezLeandro)
-- 💼 LinkedIn: [Leandro Ordóñez](https://www.linkedin.com/in/leandroordonez)
-- 📧 Email: [leandro.ordonez.ante@gmail.com](mailto:leandro.ordonez.ante@gmail.com)
+- [Twitter: @OrdonezLeandro](http://twitter.com/OrdonezLeandro)  
+- [LinkedIn: Leandro Ordóñez](https://www.linkedin.com/in/leandroordonez)  
+- [Email: leandro.ordonez.ante@gmail.com](mailto:leandro.ordonez.ante@gmail.com)
