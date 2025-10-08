@@ -35,3 +35,15 @@ HUGO_ENABLEGITINFO = "true"
   to = "https://cloud.ilabt.imec.be/index.php/s/83jpXHMdsQ4Cem9"
   status = 301
   force = true # COMMENT: ensure that we always redirect
+
+[[redirects]]
+  from = "https://ordonez.tech/*"
+  to = "https://leandro.ordonez.tech/:splat"
+  status = 301
+  force = true
+   
+[[redirects]]
+  from = "http://ordonez.tech/*"
+  to = "https://leandro.ordonez.tech/:splat"
+  status = 301
+  force = true
